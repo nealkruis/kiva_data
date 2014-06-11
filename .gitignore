@@ -5,3 +5,4 @@
 *.pyc
 sandbox.*
 sandbox/
+error.out
