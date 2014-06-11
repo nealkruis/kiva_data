@@ -1,0 +1,4 @@
+# Set values below
+
+:deep_ground_depth=>40,
+:far_field_width=>30
