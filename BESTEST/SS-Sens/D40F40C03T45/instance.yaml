@@ -103,7 +103,7 @@
       solver: bicgstab
       preconditioner: ilu
       maxIterations: 100000
-      tolerance: 3.16e-06
+      tolerance: 3.16e-05
       initializationMethod: STEADY-STATE  # KUSUDA | CONSTANT | STEADY-STATE
       convectionCalculationMethod: CONSTANT # AUTO | CONSTANT
       interiorConvectiveCoefficient: 99999
