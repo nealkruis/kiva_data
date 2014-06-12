@@ -11,9 +11,6 @@
 :deep_ground_depth=>15,
 :far_field_width=>15,
 
-:min_cell_dim=>0.003,
-:max_cell_growth=>1.30,
-
 :init_method=>"STEADY-STATE",
 :bestest_int_conv=>100,
 :bestest_ext_conv=>100

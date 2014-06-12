@@ -1,3 +1,0 @@
-# Set values below
-
-:linear_solver_tolerance=>1e-5

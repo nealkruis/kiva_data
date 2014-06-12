@@ -97,7 +97,7 @@ if (bestest)
 
   soil_type = "Standard 140a Soil"
   concrete_material = "Standard 140a Soil"
-  foundation_wall_depth = 0.1
+  foundation_wall_depth = 0.0
   footer_depth = 0.0
   absorptivity = 0.0
   wall_thickness = 0.24
@@ -162,17 +162,19 @@ Foundation:
   soilAbsorptivity: <%= absorptivity %>  # 0-1
   soilEmissivity: <%= absorptivity %>  # 0-1
   surfaceRoughness: 30
+<% if !(bestest) %>
   slab:
     layers:
       -
         material: <%= concrete_material %>
         thickness: <%= slab_thickness %>
-<% if (whole_slab) %>
+  <% if (whole_slab) %>
       -
         material: XPS
         thickness: <%= insulation_thickness%>
-<% end %>
+  <% end %>
     emissivity: <%= absorptivity %>
+<% end %>
   wall:
     layers:
       -
