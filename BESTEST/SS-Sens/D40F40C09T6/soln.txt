@@ -1,0 +1,3 @@
+# Set values below
+
+:min_cell_dim=>0.009
