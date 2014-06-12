@@ -1,5 +1,5 @@
-#INSERT TEMPLATE '/projects/kruis/kiva/templates/template.params'
-#Path resolves to '/projects/kruis/kiva/templates/template.params'
+#INSERT TEMPLATE '/projects/kruis/kiva_data/templates/template.params'
+#Path resolves to '/projects/kruis/kiva_data/templates/template.params'
     
     
     Simulation Control:
@@ -78,7 +78,7 @@
     
       foundationDepth: 0.0  # [m]
       farFieldWidth: 40  # [m]
-      deepGroundDepth: 40  # [m]
+      deepGroundDepth: 30  # [m]
       deepGroundBoundary: CONSTANT-TEMP  # AUTO | CONSTANT-TEMP | ZERO-FLUX
       deepGroundTemperature: 283.15  # [K]
     
@@ -100,7 +100,11 @@
         maxExteriorGrowthCoeff: 1.3
     
       numericalScheme: STEADY-STATE  # ADE | EXPLICIT | ADI | IMPLICIT | CRANK-NICOLSON | STEADY-STATE
-      initializationMethod: STEADY-STATE  # KUSUDA | CONSTANT | IMPLICIT-ACCEL | STEADY-STATE
+      solver: bicgstab
+      preconditioner: ilu
+      maxIterations: 100000
+      tolerance: 1.0e-06
+      initializationMethod: STEADY-STATE  # KUSUDA | CONSTANT | STEADY-STATE
       convectionCalculationMethod: CONSTANT # AUTO | CONSTANT
       interiorConvectiveCoefficient: 99999
       exteriorConvectiveCoefficient: 99999
@@ -112,7 +116,9 @@
       outdoorTemperatureMethod: WEATHER-FILE # WEATHER-FILE | CONSTANT
     
       outputReport:
-        - 13
+        minFrequency: 60  # [min]
+        reports:
+          - 13
     
       outputAnimations:
-#END TEMPLATE '/projects/kruis/kiva/templates/template.params'
+#END TEMPLATE '/projects/kruis/kiva_data/templates/template.params'
