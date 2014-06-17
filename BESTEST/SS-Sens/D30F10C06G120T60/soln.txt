@@ -1,0 +1,7 @@
+# Set values below
+
+:deep_ground_depth=>30,
+:far_field_width=>10,
+:min_cell_dim=>0.006,
+:max_cell_growth=>1.20,
+:linear_solver_tolerance=>1e-06
