@@ -26,7 +26,7 @@ print "Read Excel results..."
 
 
 workbook = xlrd.open_workbook('../doc/GC-InDepth-Results.XLS')
-output_dir = '../../../../Documents/workspace/Thesis/'
+output_dir = '/Users/nkruis/Documents/workspace/Thesis/'
 
 class Solution:
     def __init__(self):
@@ -44,9 +44,12 @@ def getTime(case, soln):
     else:
         with open('../'+case+'/'+soln.ID+'/log.out') as f:
             lines = f.readlines()
-        time_string = re.search('Elapsed Time: (.*)\n',lines[-1]).group(1)
-        time = datetime.strptime(time_string,"%H:%M:%S")
-        delta = timedelta(hours=time.hour, minutes=time.minute, seconds=time.second)
+        for line in lines:
+            if 'Elapsed Time:' in line:
+                time_string = re.search('Elapsed Time: (.*)\n',line).group(1)
+                continue
+        time = datetime.strptime(time_string,"%H:%M:%S.%f")
+        delta = timedelta(hours=time.hour, minutes=time.minute, seconds=time.second, microseconds=time.microsecond)
         return delta.total_seconds()       
         
 blue_palette = sns.blend_palette(["ghostwhite",sns.color_palette("deep",6)[0]],5)
