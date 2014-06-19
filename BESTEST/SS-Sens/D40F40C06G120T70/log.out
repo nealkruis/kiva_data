@@ -1,0 +1,16 @@
+instance.yaml
+kiva v0.2.0-0-g98c829f
+Copyright (C) 2012-2014 Big Ladder Software
+Web: www.bigladdersoftware.com
+
+Starting Program: 2014-Jun-19 09:56:00.333516
+Creating Domain...
+Beginning Simulation...
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+2097-Jan-01 00:00:00 (0%)
+2097-Jan-01 00:00:00 (100%)
+Finished Program: 2014-Jun-19 10:24:19.029229
+Elapsed Time: 00:28:18.695713
+
