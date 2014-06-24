@@ -1,0 +1,7 @@
+# Set values below
+
+:init_method=>"STEADY-STATE",
+:init_temp=>10,
+:imp_timestep=>0,
+:imp_periods=>0,
+:warmup_days=>0

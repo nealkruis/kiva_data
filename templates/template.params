@@ -34,8 +34,8 @@ parameter "soil_type", :default=>"Typical Soil"
 parameter "deep_ground_depth", :default=>40
 parameter "far_field_width", :default=>40
 
-parameter "min_cell_dim", :default=>0.1
-parameter "max_cell_growth", :default=>1.15
+parameter "min_cell_dim", :default=>0.006
+parameter "max_cell_growth", :default=>1.20
 parameter "timestep", :default=>60
 
 parameter "numerical_scheme", :default=>"ADE"
@@ -46,6 +46,7 @@ parameter "linear_solver_max_iter", :default=>100000
 parameter "linear_solver_tolerance", :default=>1.0e-6
 
 parameter "init_method", :default=>"STEADY-STATE"
+parameter "init_temp", :default=>10
 
 parameter "imp_periods", :default=>0
 parameter "imp_timestep", :default=>0
@@ -264,7 +265,7 @@ end
   tolerance: <%= linear_solver_tolerance %>
   initializationMethod: <%= init_method %>  # KUSUDA | CONSTANT | STEADY-STATE
 <% if (init_method == "CONSTANT") %>
-  initialTemperature: <%= bestest_deep_ground_temp + 273.15 %>
+  initialTemperature: <%= init_temp + 273.15 %>
 <% end %>
 <% if (imp_periods > 0) %>
   implicitAccelTimestep: <%= imp_timestep %>  # hours
