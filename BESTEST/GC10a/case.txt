@@ -8,6 +8,9 @@
 :foundation_area=>144,
 :interior_temp=>30,
 
+:deep_ground_depth=>40,
+:far_field_width=>40,
+
 :init_method=>"STEADY-STATE",
 :bestest_int_conv=>99999,
 :bestest_ext_conv=>99999,

@@ -1,5 +1,5 @@
-#INSERT TEMPLATE '/projects/kruis/kiva/templates/template.params'
-#Path resolves to '/projects/kruis/kiva/templates/template.params'
+#INSERT TEMPLATE '/projects/kruis/kiva_data/templates/template.params'
+#Path resolves to '/projects/kruis/kiva_data/templates/template.params'
     
     
     Simulation Control:
@@ -59,19 +59,13 @@
       soilAbsorptivity: 0.0  # 0-1
       soilEmissivity: 0.0  # 0-1
       surfaceRoughness: 30
-      slab:
-        layers:
-          -
-            material: Standard 140a Soil
-            thickness: 0.01
-        emissivity: 0.0
       wall:
         layers:
           -
             material: Standard 140a Soil
             thickness: 0.24
         heightAboveGrade: 0.0  # [m]
-        height: 0.1  # [m]
+        height: 0.0  # [m]
         interiorEmissivity: 0.0
         exteriorEmissivity: 0.0
         exteriorAbsorptivity: 0.0
@@ -94,13 +88,17 @@
     
     
       mesh:
-        minCellDim: 0.003  # [m]
-        maxDepthGrowthCoeff: 1.3
-        maxInteriorGrowthCoeff: 1.3
-        maxExteriorGrowthCoeff: 1.3
+        minCellDim: 0.006  # [m]
+        maxDepthGrowthCoeff: 1.2
+        maxInteriorGrowthCoeff: 1.2
+        maxExteriorGrowthCoeff: 1.2
     
       numericalScheme: STEADY-STATE  # ADE | EXPLICIT | ADI | IMPLICIT | CRANK-NICOLSON | STEADY-STATE
-      initializationMethod: STEADY-STATE  # KUSUDA | CONSTANT | IMPLICIT-ACCEL | STEADY-STATE
+      solver: bicgstab
+      preconditioner: ilu
+      maxIterations: 100000
+      tolerance: 1.0e-06
+      initializationMethod: STEADY-STATE  # KUSUDA | CONSTANT | STEADY-STATE
       convectionCalculationMethod: CONSTANT # AUTO | CONSTANT
       interiorConvectiveCoefficient: 7.95
       exteriorConvectiveCoefficient: 100
@@ -110,7 +108,9 @@
       outdoorTemperatureMethod: WEATHER-FILE # WEATHER-FILE | CONSTANT
     
       outputReport:
-        - 13
+        minFrequency: 60  # [min]
+        reports:
+          - 13
     
       outputAnimations:
-#END TEMPLATE '/projects/kruis/kiva/templates/template.params'
+#END TEMPLATE '/projects/kruis/kiva_data/templates/template.params'

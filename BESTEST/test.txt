@@ -4,9 +4,9 @@
 
 :plot=>false,
 
-:min_cell_dim=>0.005,
-:max_cell_growth=>1.30,
+:min_cell_dim=>0.006,
+:max_cell_growth=>1.20,
 
-:linear_solver_tolerance=>1e-5,
+:linear_solver_tolerance=>1e-6,
 
 :perimeter_width=>0.0
