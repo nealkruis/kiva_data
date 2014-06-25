@@ -5,7 +5,7 @@
     Simulation Control:
       startDate: 2096-Dec-31
       endDate: 2097-Dec-31
-      timeStep: 60 # [min]
+      timeStep: 30 # [min]
     
     Materials:
       Typical Soil:  # alpha: 4.54115E-7
