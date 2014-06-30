@@ -1,0 +1,6 @@
+# Set values below
+
+:timestep=>1,
+:min_cell_dim=>0.02,
+:numerical_scheme=>"EXPLICIT"
+

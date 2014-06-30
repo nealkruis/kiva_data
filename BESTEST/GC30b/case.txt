@@ -12,6 +12,10 @@
 :far_field_width=>15,
 
 :init_method=>"STEADY-STATE",
+:imp_timestep=>0,
+:imp_periods=>0,
+:warmup_days=>0,
+
 :bestest_int_conv=>100,
 :bestest_ext_conv=>100
 

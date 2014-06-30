@@ -6,7 +6,11 @@
 
 :min_cell_dim=>0.006,
 :max_cell_growth=>1.20,
-
 :linear_solver_tolerance=>1e-6,
+
+:init_method=>"STEADY-STATE",
+:imp_timestep=>168,
+:imp_periods=>12,
+:warmup_days=>365,
 
 :perimeter_width=>0.0

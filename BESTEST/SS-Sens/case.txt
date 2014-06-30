@@ -11,6 +11,10 @@
 :numerical_scheme=>"STEADY-STATE",
 
 :init_method=>"STEADY-STATE",
+:imp_timestep=>0,
+:imp_periods=>0,
+:warmup_days=>0,
+
 :bestest_int_conv=>99999,
 :bestest_ext_conv=>99999,
 :bestest_wall_boundary=>"LINEAR-DT",
