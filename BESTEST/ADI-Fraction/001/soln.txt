@@ -1,0 +1,5 @@
+# Set values below
+
+:f_adi=>0.001,
+:numerical_scheme=>"ADI"
+

@@ -1,0 +1,5 @@
+# Set values below
+
+:timestep=>20,
+:numerical_scheme=>"ADE"
+
