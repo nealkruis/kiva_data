@@ -1,6 +1,9 @@
 print "...sys"
 import sys
 
+print "...os"
+import os
+
 print "...matplotlib"
 import matplotlib.pyplot as plt
 
@@ -15,6 +18,12 @@ import csv
 
 print "...pandas"
 import pandas as pd
+
+print "...numpy"
+import numpy as np
+
+print "...math"
+import math
 
 print "...re"
 import re
@@ -37,6 +46,8 @@ class Solution:
         self.ref = False
         self.values = []
         self.times = []
+        self.line_color = []
+        
 
 def getTime(case, soln):
     if soln.ref:

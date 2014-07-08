@@ -45,6 +45,8 @@ parameter "linear_solver_pc", :default=>"ilu"
 parameter "linear_solver_max_iter", :default=>100000
 parameter "linear_solver_tolerance", :default=>1.0e-6
 
+parameter "f_adi", :default=>0.01
+
 parameter "init_method", :default=>"STEADY-STATE"
 parameter "init_temp", :default=>10
 
@@ -59,6 +61,7 @@ parameter "all_outputs", :default=>false
 parameter "plot", :default=>true
 parameter "plot_freq", :default=>36
 parameter "plot_size", :default=>800
+parameter "plot_grid", :default=>"yes"
 
 parameter "bestest", :default=>false
 parameter "bestest_soil_k", :default=> 1.9
@@ -257,7 +260,7 @@ end
 
   numericalScheme: <%= numerical_scheme %>  # ADE | EXPLICIT | ADI | IMPLICIT | CRANK-NICOLSON | STEADY-STATE
 <% if (numerical_scheme == "ADI") %>
-  fADI: 0.01
+  fADI: <%= f_adi %>
 <% end %>
   solver: <%= linear_solver_type %>
   preconditioner: <%= linear_solver_pc %>
@@ -313,10 +316,11 @@ end
 
   outputAnimations:
 <% if (plot) %>
+  <% if (coordinate_system == "3D" || coordinate_system == "3DSYMMETRY") %>
     -
       name: "Grade"
       frequency: <%= plot_freq %>  # [h]
-      grid: yes
+      grid: <%= plot_grid %>
       gradients: no
       contours: no
       size: <%= plot_size %>
@@ -324,15 +328,16 @@ end
     -
       name: "X-Slice"
       frequency: <%= plot_freq %>  # [h]
-      grid: yes
+      grid: <%= plot_grid %>
       gradients: no
       contours: no
       size: <%= plot_size %>
       xRange: [0,0]
+  <% end %>
     -
       name: "Y-Slice"
       frequency: <%= plot_freq %>  # [h]
-      grid: yes
+      grid: <%= plot_grid %>
       gradients: no
       contours: no
       size: <%= plot_size %>
