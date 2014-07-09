@@ -45,7 +45,7 @@ parameter "linear_solver_pc", :default=>"ilu"
 parameter "linear_solver_max_iter", :default=>100000
 parameter "linear_solver_tolerance", :default=>1.0e-6
 
-parameter "f_adi", :default=>0.01
+parameter "f_adi", :default=>0.00001
 
 parameter "init_method", :default=>"STEADY-STATE"
 parameter "init_temp", :default=>10
