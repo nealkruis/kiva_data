@@ -94,7 +94,7 @@
         maxExteriorGrowthCoeff: 1.2
     
       numericalScheme: ADI  # ADE | EXPLICIT | ADI | IMPLICIT | CRANK-NICOLSON | STEADY-STATE
-      fADI: 0.99
+      fADI: 0.0001
       solver: bicgstab
       preconditioner: ilu
       maxIterations: 100000
