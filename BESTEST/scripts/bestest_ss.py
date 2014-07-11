@@ -117,7 +117,7 @@ ax.set_ylim([0,3000])
 ax.set_xticks(ticks)
 ax.set_xticklabels(cases)
 ax.yaxis.grid()
-ax.set_ylabel('Floor Heat Flow [W]')
+ax.set_ylabel('Slab Heat Loss [W]')
 
 legend = ax.legend(data[:10], names[:10], loc='upper center', ncol=5, bbox_to_anchor=(0.5,-0.05),
                    fancybox=True)
