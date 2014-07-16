@@ -17,7 +17,7 @@ with open('../SS-Sens/solns.csv','rU') as f:
                 soln.write(':far_field_width=>'+row[1]+',\n')
                 soln.write(':min_cell_dim=>0.0'+row[2]+',\n')
                 soln.write(':max_cell_growth=>'+row[3][0]+'.'+row[3][1:]+',\n')
-                exp = float(row[4])/10;
+                exp = float(row[4][0]+'.'+row[4][1:]);
                 tol = 10**(-exp)
                 tol_str = str(tol)
                 soln.write(':linear_solver_tolerance=>'+tol_str)
