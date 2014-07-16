@@ -13,7 +13,7 @@ def readTimeseries(case, ID):
         
 print "Read results..."    
 
-ids = ['30', '20', '15', '10', '5']
+ids = ['00001', '0001', '001', '01']
 
 # Line Chart
 print "Create figure..."
@@ -27,16 +27,16 @@ fig = plt.figure()
 ax = fig.add_subplot(111)
 
 for id in ids:
-    print "...Plotting: " + id + ' min'
-    values = readTimeseries('ADE-Timestep',id)
-    ax.plot(values, label=id + ' min')
+    print "...Plotting: f = 0." + id
+    values = readTimeseries('ADI-Fraction',id)
+    ax.plot(values, label='f = 0.' + id)
 
-#print "...Plotting: Implicit"
-#values = readTimeseries('GC40a','Implicit')
-#ax.plot(values, label='Implicit')
+print "...Plotting: Implicit"
+values = readTimeseries('GC40a','Implicit')
+ax.plot(values, label='Implicit')
 
 
-ax.set_ylim([0,4000])
+#ax.set_ylim([0,4000])
 ax.set_xlim([0,8760])
 
 ax.legend(loc='upper center', ncol=5, bbox_to_anchor=(0.5,-0.05), fancybox=True)
