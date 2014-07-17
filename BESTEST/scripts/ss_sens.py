@@ -132,7 +132,7 @@ ax1.set_position([box.x0, box.y0 + box.height*0.1, box.width, box.height*0.9])
 
 ax1.legend(loc='upper center',title='Min. Cell Dim., $\Delta r_{min}$',ncol=3)
 ax1.get_legend().get_title().set_fontsize(14)
-ax1.set_ylim([2340,2500])
+ax1.set_ylim([2380,2500])
 ax1.set_ylabel('Floor Heat Flow [W]')
 ax1.set_xlabel('Geometric Growth Factor, $R$')
     
@@ -221,7 +221,7 @@ ax3.set_position([box.x0, box.y0 + box.height*0.1, box.width, box.height*0.9])
 
 ax3.legend(loc='lower center',title='Far-Field Width',ncol=3)
 ax3.get_legend().get_title().set_fontsize(14)
-ax3.set_ylim([2340,2500])
+ax3.set_ylim([2380,2500])
 ax3.set_ylabel('Floor Heat Flow [W]')
 ax3.set_xlabel('Deep-Ground Depth [m]')
         
@@ -251,8 +251,12 @@ ax4.set_xlabel('Deep-Ground Depth [m]')
 fig4.savefig(output_dir + 'images/' + file_name + '.pdf')
 
 # Tolerance
-T = ["40","45","50","55","60"]
-x = [10**-4,10**-4.5,10**-5,10**-5.5,10**-6]
+#T = ["35","3625","375","3875","40","4125","425","4375","45","475","50","55","60"]
+T = ["40","4125","425","4375","45","475","50","55","60"]
+
+x = []
+for t in T:
+    x.append(10**(-float(t[0]+'.'+t[1:])))
 
 fig5 = plt.figure()
 ax5 = fig5.add_subplot(111)
@@ -261,7 +265,7 @@ file_name = "ss_sens_tol"
 y = []
 for t in T:
     y.append(getLastValue('D40F40C06G120T'+t))
-ax5.plot(x,y,'-o',linewidth=1,label='Numerical')
+ax5.plot(x[1:],y[1:],'-o',linewidth=1,label='Numerical')
 
 y = []
 for t in T:
@@ -282,7 +286,7 @@ box = ax5.get_position()
 ax5.set_position([box.x0, box.y0 + box.height*0.1, box.width, box.height*0.9])
 
 ax5.legend(loc='lower right')
-ax5.set_ylim([2340,2500])
+ax5.set_ylim([2380,2500])
 ax5.set_ylabel('Floor Heat Flow [W]')
 ax5.set_xlabel('Tolerance')
 ax5.set_xscale('log')
@@ -298,7 +302,7 @@ file_name = "ss_sens_tol_times"
 y = []
 for t in T:
     y.append(getTime('D40F40C06G120T'+t))
-ax6.plot(x,y,'-o',linewidth=1)
+ax6.plot(x[1:],y[1:],'-o',linewidth=1)
 
 box = ax6.get_position()
 ax6.set_position([box.x0, box.y0 + box.height*0.1, box.width, box.height*0.9])

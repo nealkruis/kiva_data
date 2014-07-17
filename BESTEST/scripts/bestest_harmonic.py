@@ -71,14 +71,11 @@ def getSum(case, solution):
         total = getXLSsum(case, solution.ID)
     else:
         total = sum(readTimeseries(case,solution.ID))/1000.0
-        
-    if total < 0:
-        total = 0    
-    if case == 'GC50b':
-        return total/10.0
-    else:
-        return total
+    
+    return total    
 
+def fmt(x):
+    return '{:,.0f}'.format(x)
         
 print "Read results..."    
 
@@ -216,6 +213,9 @@ for soln in solutions:
     names.append(soln.name)
     colors.append(soln.color)
     hatches.append(soln.hatch)
+    soln.values = []
+    soln.times = []
+
 
 
 width = 1
@@ -227,15 +227,20 @@ i2 = 1
 data = []
 time_data = []
 
+
 for case in cases:
     ticks1.append(i1+4)
     ticks2.append(i2+2.5)
     for soln in solutions:
         print "...Calculating: " + case + ": " + soln.name
         value = getSum(case, soln)
+        soln.values.append(value)
+        if case == 'GC50b':
+            value = value/10.0
         data.append(ax1.bar(i1, value, width, color=soln.color, hatch=soln.hatch))
+        time = getTime(case,soln)
+        soln.times.append(time)
         if (not soln.ref):
-            time = getTime(case,soln)
             time_data.append(ax2.bar(i2, time, width, color=soln.color,hatch=soln.hatch))
             i2+=1
         i1+=1
@@ -272,6 +277,28 @@ legend2 = ax2.legend(time_data[:5], names[3:], loc='upper center', ncol=5, bbox_
 
 
 fig2.savefig(output_dir + 'images/' + file_name + '_times.pdf')
+
+# Create Table
+print "Create table..."
+
+d = {}
+for soln in solutions:
+    d[soln.name] = soln.values
+    
+df = pd.DataFrame(d, index=cases)
+df = df[names].T
+
+df.to_latex(output_dir + 'tables/' + file_name + '.tex',float_format=fmt)
+
+d = {}
+for soln in solutions:
+    if (not soln.ref):
+        d[soln.name] = soln.times
+    
+df = pd.DataFrame(d, index=cases)
+df = df[names[3:]].T
+
+df.to_latex(output_dir + 'tables/' + file_name + '_times.tex',float_format=fmt)
 
 
 print "Done."
