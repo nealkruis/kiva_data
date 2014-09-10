@@ -95,8 +95,13 @@ print "Create figure for GC40a..."
 file_name = 'bestest_gc40a'
 
 # Figure style
-sns.set_style("whitegrid", {'axes.grid': False})
-sns.set_context("paper", {'axes.labelsize': 16, 'xtick.labelsize': 12, 'ytick.labelsize': 12})
+sns.set_style("white", {'axes.grid': False,
+                        'xtick.direction':'in', 
+                        'ytick.direction':'in',
+                        'xtick.major.size':4,
+                        'ytick.major.size':4})
+
+sns.set_context("paper", rc={'axes.labelsize': 16, 'xtick.labelsize': 12, 'ytick.labelsize': 12})
 sns.set_palette('Dark2',8)
 fig = plt.figure()
 ax = fig.add_subplot(111)
@@ -115,7 +120,6 @@ box = ax.get_position()
 ax.set_position([box.x0, box.y0 + box.height*0.2, box.width, box.height*0.8])
 
 ax.legend(loc='upper center', ncol=4, bbox_to_anchor=(0.5,-0.15), fancybox=True)
-ax.yaxis.grid()
 
 fig.savefig(output_dir + 'images/' + file_name + '.pdf')
 
@@ -125,8 +129,7 @@ print "Create figure for GC40b..."
 file_name = 'bestest_gc40b'
 
 # Figure style
-sns.set_style("whitegrid", {'axes.grid': False})
-sns.set_context("paper", {'axes.labelsize': 16, 'xtick.labelsize': 12, 'ytick.labelsize': 12})
+sns.set_context("paper", rc={'axes.labelsize': 16, 'xtick.labelsize': 12, 'ytick.labelsize': 12})
 sns.set_palette('Dark2',8)
 figb = plt.figure()
 axb = figb.add_subplot(111)
@@ -145,7 +148,6 @@ box = axb.get_position()
 axb.set_position([box.x0, box.y0 + box.height*0.2, box.width, box.height*0.8])
 
 axb.legend(loc='upper center', ncol=4, bbox_to_anchor=(0.5,-0.15), fancybox=True)
-axb.yaxis.grid()
 
 figb.savefig(output_dir + 'images/' + file_name + '.pdf')
 
@@ -155,8 +157,7 @@ print "Create figure for GC40c..."
 file_name = 'bestest_gc40c'
 
 # Figure style
-sns.set_style("whitegrid", {'axes.grid': False})
-sns.set_context("paper", {'axes.labelsize': 16, 'xtick.labelsize': 12, 'ytick.labelsize': 12})
+sns.set_context("paper", rc={'axes.labelsize': 16, 'xtick.labelsize': 12, 'ytick.labelsize': 12})
 sns.set_palette('Dark2',8)
 figc = plt.figure()
 axc = figc.add_subplot(111)
@@ -175,15 +176,142 @@ box = axc.get_position()
 axc.set_position([box.x0, box.y0 + box.height*0.2, box.width, box.height*0.8])
 
 axc.legend(loc='upper center', ncol=4, bbox_to_anchor=(0.5,-0.15), fancybox=True)
-axc.yaxis.grid()
 
 figc.savefig(output_dir + 'images/' + file_name + '.pdf')
 
+# Case 40 table
 
+print "Create Case 40 table..."
+
+file_name = 'bestest_gc40'
+
+wb = xlrd.open_workbook('Fourier.xlsx')
+
+cases = ['GC40a','GC40b','GC40c']
+
+table_text = "\\begin{tabular}{@{}llccccc@{}}\n"
+table_text += "\\toprule\n"
+table_text += "\\multicolumn{2}{l}{\\textbf{Case/Solution}} & "
+table_text += "\\begin{tabular}[c]{@{}c@{}}$\\bar{\\dot{Q}}$\\\\ {[W]}\\end{tabular} & "
+table_text += "\\begin{tabular}[c]{@{}c@{}}$\\dot{Q}_{year}$\\\\ {[W]}\\end{tabular} & "
+table_text += "\\begin{tabular}[c]{@{}c@{}}$\\Phi_{year}$\\\\ {[days]}\\end{tabular} & "
+table_text += "\\begin{tabular}[c]{@{}c@{}}$\\dot{Q}_{day}$\\\\ {[W]}\\end{tabular} & "
+table_text += "\\begin{tabular}[c]{@{}c@{}}$\\Phi_{day}$\\\\ {[hours]}\\end{tabular} \\\\ \\midrule \n"
+
+case_values = {}
+cm = plt.get_cmap('RdBu')
+
+
+for case in cases:
+    q_a = []
+    q_y = []
+    p_y = []
+    q_d = []
+    p_d = []
+    for soln in solutions:
+        ws = wb.sheet_by_name(case + '|' + soln.ID)
+        q_a.append(ws.cell_value(1,0))
+        q_y.append(ws.cell_value(1,1))
+        p_y.append(ws.cell_value(1,2)-15.0)
+        q_d.append(ws.cell_value(1,3))
+        p_d.append(ws.cell_value(1,4)-4.0)
+    case_values[case] = []
+    case_values[case].append(q_a)
+    case_values[case].append(q_y)
+    case_values[case].append(p_y)
+    case_values[case].append(q_d)
+    case_values[case].append(p_d)
+             
+scale = 10.0
+for case in cases:
+    table_text += "\\multicolumn{2}{l}{\\textbf{"+ case +":}} & & & & & \\\\ \n"
+    for soln in solutions:
+        ws = wb.sheet_by_name(case + '|' + soln.ID)
+        table_text += " & " + soln.name
+        
+        value = ws.cell_value(1,0)
+        fp = np.percentile(np.array(case_values[case][0]),25)
+        tp = np.percentile(np.array(case_values[case][0]),75)
+        med = np.percentile(np.array(case_values[case][0]),50)
+        irq = (tp - fp)
+        min = med - irq*scale
+        max = med + irq*scale
+        deg = 1 - (value - min)/(max - min)
+        color = cm(deg)
+        
+        q_ave = '\\cellcolor[rgb]{'+ str(color[0]) + ',' + str(color[1]) +',' + str(color[2]) + '}' +'{:,.0f}'.format(value)
+        
+        value = ws.cell_value(1,1)
+        fp = np.percentile(np.array(case_values[case][1]),25)
+        tp = np.percentile(np.array(case_values[case][1]),75)
+        med = np.percentile(np.array(case_values[case][1]),50)
+        irq = (tp - fp)
+        min = med - irq*scale
+        max = med + irq*scale
+        deg = 1 - (value - min)/(max - min)
+        color = cm(deg)
+
+        q_year = '\\cellcolor[rgb]{'+ str(color[0]) + ',' + str(color[1]) +',' + str(color[2]) + '}' +'{:,.0f}'.format(value)
+
+        value = ws.cell_value(1,2) - 15.0
+        fp = np.percentile(np.array(case_values[case][2]),25)
+        tp = np.percentile(np.array(case_values[case][2]),75)
+        med = np.percentile(np.array(case_values[case][2]),50)
+        irq = (tp - fp)
+        min = med - irq*scale
+        max = med + irq*scale
+        deg = 1 - (value - min)/(max - min)
+        color = cm(deg)
+
+        phi_year = '\\cellcolor[rgb]{'+ str(color[0]) + ',' + str(color[1]) +',' + str(color[2]) + '}' +'{:,.1f}'.format(value)
+
+        value = ws.cell_value(1,3)
+        fp = np.percentile(np.array(case_values[case][3]),25)
+        tp = np.percentile(np.array(case_values[case][3]),75)
+        med = np.percentile(np.array(case_values[case][3]),50)
+        irq = (tp - fp)
+        min = med - irq*scale
+        max = med + irq*scale
+        deg = 1 - (value - min)/(max - min)
+        color = cm(deg)
+        
+        q_day = '\\cellcolor[rgb]{'+ str(color[0]) + ',' + str(color[1]) +',' + str(color[2]) + '}' +'{:,.1f}'.format(value)
+        
+        value = ws.cell_value(1,4) - 4.0
+        fp = np.percentile(np.array(case_values[case][4]),25)
+        tp = np.percentile(np.array(case_values[case][4]),75)
+        med = np.percentile(np.array(case_values[case][4]),50)
+        irq = (tp - fp)
+        min = med - irq*scale
+        max = med + irq*scale
+        deg = 1 - (value - min)/(max - min)
+        color = cm(deg)
+
+        phi_day = '\\cellcolor[rgb]{'+ str(color[0]) + ',' + str(color[1]) +',' + str(color[2]) + '}' +'{:,.1f}'.format(value)
+        
+        table_text += " & " + q_ave + " & " + q_year + " & " + phi_year + " & " + q_day + " & " + phi_day
+        if soln.ID == 'CrankNicolson':
+            if case == 'GC40c':
+                table_text += " \\\\  \\bottomrule \n"
+            else:
+                table_text += " \\\\  \\midrule \n"
+        else:
+            table_text += " \\\\ \n"
+
+
+table_text += "\\end{tabular}"
+
+with open(output_dir + 'tables/' + file_name + '.tex','w') as f:
+    f.write(table_text)
 
 # Bar chart
 print "Creating Bar Charts..."
-sns.set_context("paper", {'axes.labelsize': 16, 'xtick.labelsize': 8, 'ytick.labelsize': 12})
+sns.set_style("white", {'axes.grid': False,
+                        'xtick.direction':'in', 
+                        'ytick.direction':'in',
+                        'xtick.major.size':0,
+                        'ytick.major.size':0})
+sns.set_context("paper", rc={'axes.labelsize': 16, 'xtick.labelsize': 8, 'ytick.labelsize': 12})
 
 file_name = "bestest_harmonic"
 
@@ -270,7 +398,7 @@ ax2.set_xlim([0,i2])
 ax2.set_xticks(ticks2)
 ax2.set_xticklabels(cases)
 ax2.yaxis.grid()
-ax2.set_ylabel('Simulation Time [s]')
+ax2.set_ylabel('Simulation Wall Time [s]')
 
 legend2 = ax2.legend(time_data[:5], names[3:], loc='upper center', ncol=5, bbox_to_anchor=(0.5,-0.05),
                    fancybox=True)

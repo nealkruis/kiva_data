@@ -63,28 +63,27 @@ def getTime(case, soln):
         delta = timedelta(hours=time.hour, minutes=time.minute, seconds=time.second, microseconds=time.microsecond)
         return delta.total_seconds()       
         
-blue_palette = sns.blend_palette(["ghostwhite",sns.color_palette("deep",6)[0]],5)
-green_palette = sns.blend_palette(["ghostwhite",sns.color_palette("deep",6)[1]],5)
-red_palette = sns.blend_palette(["ghostwhite",sns.color_palette("deep",6)[2]],5)
-purple_palette = sns.blend_palette(["ghostwhite",sns.color_palette("deep",6)[3]],5)
-yellow_palette = sns.blend_palette(["ghostwhite",sns.color_palette("deep",6)[4]],5)
-
 
 #Original
 
-palette = sns.color_palette("colorblind",6)
-palette[1] = palette[5]
+gray = sns.color_palette("Greys",4)
+orrd = sns.color_palette("OrRd",5)
 
-colors = [palette[2],
-          palette[0],
-          palette[0],
-          palette[0],
+palette = sns.color_palette("Blues",4)
+#palette[2] = gray[0]
+#palette[0] = orrd[0]
+#palette[1] = orrd[3]
+
+colors = [palette[3],
           palette[1],
           palette[1],
           palette[1],
-          palette[1],
-          palette[1],
-          palette[1]]
+          palette[2],
+          palette[2],
+          palette[2],
+          palette[2],
+          palette[2],
+          palette[2]]
           
           
 hatches = ['',

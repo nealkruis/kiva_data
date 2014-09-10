@@ -76,8 +76,8 @@ print "Create figures..."
 file_name = 'bestest_ss'
 
 # Figure style
-sns.set_style("whitegrid", {'axes.grid': False})
-sns.set_context("paper", {'axes.labelsize': 16, 'xtick.labelsize': 12, 'ytick.labelsize': 12})
+sns.set_style("white", {'axes.grid': False})
+sns.set_context("paper", rc={'axes.labelsize': 16, 'xtick.labelsize': 12, 'ytick.labelsize': 12})
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
@@ -138,7 +138,7 @@ ax2.set_ylim([1,100000])
 ax2.set_xticks(ticks2)
 ax2.set_xticklabels(cases)
 ax2.yaxis.grid()
-ax2.set_ylabel('Simulation Time [s]')
+ax2.set_ylabel('Simulation Wall Time [s]')
 
 legend2 = ax2.legend(time_data[:6], names[4:], loc='upper center', ncol=3, bbox_to_anchor=(0.5,-0.05),
                    fancybox=True)

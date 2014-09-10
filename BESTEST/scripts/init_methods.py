@@ -2,6 +2,8 @@ print "Import libraries..."
 
 from gen_bestest import *
 
+from matplotlib.ticker import FuncFormatter 
+
 years = ['2097','2098','2099','2100','2101','2102','2103']
 
 def getTime(dir):
@@ -18,7 +20,7 @@ def getTime(dir):
 class Result:
     def __init__(self, dir):
         self.method = dir
-      
+        
         self.df = pd.read_csv('../H-Sens/' + dir + '/Timeseries.csv',
                               header=0,
                               names=['time','W'],
@@ -49,12 +51,24 @@ class Result:
         self.diffs = diffs
         self.time = getTime(dir)
 
+def to_percent(x, pos=0): 
+     return '{:.0%}'.format(x)
+
+def to_percent2(x, pos=0):
+    if abs(x) >= 0.1:
+        return '{:.1f}\%'.format(100*x)
+    #elif x >= 0.01:
+    #    return '{:.1f}\%'.format(100*x)
+    else:
+        return '{:.2f}\%'.format(100*x)
+
 print "Read results..."    
 
 results = {}
 
 for path in os.walk('../H-Sens'):
     for dir in path[1]:
+        #if ('W0' in dir and ('P0' in dir or 'P168N12' in dir)):
         if ('W0' in dir):
             print "Reading: " + dir
             results[dir] = Result(dir)
@@ -71,8 +85,15 @@ print "Create figure..."
 
 
 # Figure style
-sns.set_style("whitegrid", {'axes.grid': False, 'legend.frameon': True})
-sns.set_context("paper", {'axes.labelsize': 16, 
+sns.set_palette('YlGnBu',5)
+sns.set_style("white", {'axes.grid': False, 
+                        'legend.frameon': True,
+                        'xtick.direction':'in', 
+                        'ytick.direction':'in',
+                        'xtick.major.size':4,
+                        'ytick.major.size':4})
+
+sns.set_context("paper", rc={'axes.labelsize': 16, 
                           'xtick.labelsize': 12, 
                           'ytick.labelsize': 12,
                           'legend.fontsize': 10})
@@ -91,20 +112,118 @@ for i, plot in enumerate(plots):
     year_1_ax.plot(list(results[plot].df.ix['2097'].W), label=labels[i])
     #year_1_ax.plot(list(results[plot].df.W), label=labels[i])
 
-year_1_ax.plot(list(results["MST10P168N12W0"].df.ix['2103'].W), label='Ideal')
+line, = year_1_ax.plot(list(results["MST10P168N12W0"].df.ix['2103'].W),'k--', label='Ideal')
 year_1_ax.plot(list(results["MCT30P0N0W0"].df.ix['2097'].W), label='Constant Temperature (30$^\circ$C)')
 
+labels.append("Constant Temperature (30$^\circ$C)")
+plots.append("MCT30P0N0W0")
 
 box = year_1_ax.get_position()
 year_1_ax.set_position([box.x0, box.y0 + box.height*0.1, box.width, box.height*0.9])
 year_1_ax.legend(loc='upper right', fancybox=True)
-year_1_ax.yaxis.grid()
+
+
+line.set_dashes([16, 16])
+
+
+#year_1_ax.yaxis.grid()
 year_1_ax.set_ylim([1000,5000])
 year_1_ax.set_xlim([0,8760])
-year_1_ax.set_ylabel('Floor Heat Flow [W]')
+year_1_ax.set_ylabel('Slab Heat Loss [W]')
 year_1_ax.set_xlabel('Hour of Year')
 
 year_1_fig.savefig(output_dir + 'images/' + file_name + '.pdf')
+
+# Multi-year
+sns.set_context("paper", rc={'axes.labelsize': 16, 
+                          'xtick.labelsize': 12, 
+                          'ytick.labelsize': 12,
+                          'legend.fontsize': 9})
+
+my_fig = plt.figure()
+my_ax = my_fig.add_subplot(111)
+file_name = "init_methods_multi_year"
+
+for i, plot in enumerate(plots[:-1]):
+    ys = [y/1000000. for y in results[plot].sums]
+    my_ax.plot([1,2,3,4,5,6,7],ys,marker='o', label=labels[i])
+
+ideal = results["MST10P168N12W0"].sums[6]/1000000.
+ys = [ideal] * 7
+my_ax.plot([1,2,3,4,5,6,7],ys,'k--', label='Ideal')
+
+ys = [y/1000000. for y in results["MCT30P0N0W0"].sums]
+my_ax.plot([1,2,3,4,5,6,7],ys,marker='o', label=labels[4])
+
+box = my_ax.get_position()
+my_ax.set_position([box.x0, box.y0 + box.height*0.1, box.width, box.height*0.9])
+my_ax.legend(loc='lower right', fancybox=True)
+
+y1 = 14.
+y2 = 30.
+
+#my_ax.yaxis.grid()
+my_ax.set_ylabel('Annual Slab Heat Loss [MWh]')
+my_ax.set_xlabel('Year')
+my_ax.set_xlim([0.5,7.5])
+my_ax.set_ylim([y1,y2])
+
+my_axp = my_ax.twinx()
+my_axp.set_ylim([(y1 - ideal)/ideal,(y2 - ideal)/ideal])
+my_axp.set_position([box.x0, box.y0 + box.height*0.1, box.width, box.height*0.9])
+my_axp.yaxis.set_major_formatter(FuncFormatter(to_percent)) 
+
+
+my_fig.savefig(output_dir + 'images/' + file_name + '.pdf')
+
+table = {}
+target = results["MST10P168N12W0"].sums[6]
+
+labels[1] = "\\begin{tabular}[c]{@{}c@{}}Constant\\\\ Temperature (10$^\circ$C)\\end{tabular}"
+labels[4] = "\\begin{tabular}[c]{@{}c@{}}Constant\\\\ Temperature (30$^\circ$C)\\end{tabular}"
+
+for r in results:
+    if r in plots:
+        if "MKT10P0" in r:
+            label = labels[0]
+        elif "MCT10P0" in r:
+            label = labels[1]
+        elif "MCT30P0" in r:
+            label = labels[4]
+        elif "MST10P0" in r:
+            label = labels[2]
+        elif "MST10P168" in r:
+            label = labels[3]
+            
+        diffs = []
+        for n in results[r].sums:
+            diffs.append((n - target)/target)
+        table[label] = diffs
+        
+df = pd.DataFrame(table, index=[1,2,3,4,5,6,7])
+df.index.name = "Year"
+#df = df[labels].T
+
+table_text = df.to_latex(float_format=to_percent2, 
+                         escape=False,
+                         columns=labels).replace('rrrrr','ccccc')
+                         
+with open(output_dir + 'tables/' + file_name + '.tex','w') as f:
+    f.write(table_text)
+
+########################################
+sns.set_style("white", {'axes.grid': False, 
+                        'legend.frameon': True,
+                        'xtick.direction':'in', 
+                        'ytick.direction':'in',
+                        'xtick.major.size':4,
+                        'ytick.major.size':0})
+sns.set_context("paper", rc={'axes.labelsize': 16, 
+                          'xtick.labelsize': 12, 
+                          'ytick.labelsize': 12,
+                          'legend.fontsize': 10})
+
+sns.set_palette('YlOrRd',3)
 
 target = results["MST10P168N12W0"].sums[6]
 ideal = np.array(results["MST10P168N12W0"].df.ix['2103'].W)
@@ -114,7 +233,7 @@ min_t = min(results[d].time for d in results)
 fig2 = plt.figure()
 ax2 = fig2.add_subplot(111)
 file_name = "init_methods_time_diffs"
-sns.set_context("paper", {'axes.labelsize': 16, 
+sns.set_context("paper", rc={'axes.labelsize': 16, 
                           'xtick.labelsize': 12, 
                           'ytick.labelsize': 12,
                           'legend.fontsize': 8})
@@ -246,8 +365,10 @@ ax2.yaxis.grid()
 ax2.set_xlim([-20,1250])
 ax2.set_ylim([-0.35,0.35])
 ax2.set_ylabel('Relative Difference in \n Annual Slab Heat Loss')
-ax2.set_xlabel('Additional Simulation Runtime [s]')
+ax2.set_xlabel('Additional Simulation Wall Time [s]')
 
+
+ax2.yaxis.set_major_formatter(FuncFormatter(to_percent)) 
 
 fig2.savefig(output_dir + 'images/' + file_name + '.pdf')
 
