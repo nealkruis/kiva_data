@@ -9,8 +9,17 @@ parameter "end_month", :default=>'Dec'
 parameter "end_day", :default=>31
 
 parameter "foundation_shape", :default=>'-'  # '-', 'H', 'L'
+
+# Parameters for rectangular shapes
 parameter "foundation_area", :default=>2000|'ft2'
 parameter "foundation_aspect_ratio", :default=>1
+
+# Parameters for H-shapes
+parameter "length", :default=>37|'ft'
+parameter "width", :default=>37|'ft'
+parameter "a_dim", :default=>12.9|'ft'
+parameter "b_dim", :default=>14.4|'ft'
+
 
 parameter "foundation_type", :default=>'SLAB'
 
@@ -57,6 +66,7 @@ parameter "warmup_days", :default=>0
 parameter "coordinate_system", :default=>"3DSYMMETRY"
 
 parameter "all_outputs", :default=>false
+parameter "outputs", :default=>[17]
 
 parameter "plot", :default=>true
 parameter "plot_freq", :default=>36
@@ -106,6 +116,10 @@ if (bestest)
   absorptivity = 0.0
   wall_thickness = 0.24
   height_above_grade = 0.0
+end
+
+if (all_outputs)
+  outputs = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
 end
 
 %>
@@ -240,6 +254,25 @@ if (foundation_shape == '-')
   vertices << [-width/2.0,length/2.0]
   vertices << [width/2.0,length/2.0]
   vertices << [width/2.0,-length/2.0]
+elsif (foundation_shape == 'H')
+  vertices << [0,0]
+  vertices << [0,length]
+  vertices << [(width-b_dim)/2.0,length]
+  vertices << [(width-b_dim)/2.0,length - a_dim]
+  vertices << [width - (width-b_dim)/2.0,length - a_dim]
+  vertices << [width - (width-b_dim)/2.0,length]
+  vertices << [width,length]
+  vertices << [width,0]
+  vertices << [width - (width-b_dim)/2.0,0]
+  vertices << [width - (width-b_dim)/2.0,a_dim]
+  vertices << [(width-b_dim)/2.0,a_dim]
+  vertices << [(width-b_dim)/2.0,0]
+
+  for v in vertices
+    v[0] -= width/2.0
+    v[1] -= length/2.0
+  end
+
 end
 
 %>
@@ -298,21 +331,9 @@ end
   outputReport:
     minFrequency: 60  # [min]
     reports:
-<% if (all_outputs) %>
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      - 7
-      - 8
-      - 9
-      - 10
-      - 11
-      - 12
+<% for o in outputs %>
+      - <%= o %>
 <% end %>
-      - 13
 
   outputAnimations:
 <% if (plot) %>

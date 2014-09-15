@@ -1,0 +1,21 @@
+# Set values below
+
+:start_year=>2100,
+:end_year=>2100,
+:timestep=>60,
+
+:plot=>false,
+:outputs=>[17,15,14,11,10,9],
+
+:min_cell_dim=>0.006,
+:max_cell_growth=>1.40,
+:linear_solver_tolerance=>1e-6,
+
+:init_method=>"STEADY-STATE",
+:imp_timestep=>168,
+:imp_periods=>12,
+:warmup_days=>365,
+
+:numerical_scheme=>"ADI",
+
+:perimeter_width=>0.0
