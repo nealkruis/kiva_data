@@ -1,9 +1,9 @@
 instance.yaml
-kiva v0.2.0-6-gb4b4ece
+kiva v0.2.0-8-gc565062
 Copyright (C) 2012-2014 Big Ladder Software
 Web: www.bigladdersoftware.com
 
-Starting Program: 2014-Sep-13 15:17:12.401198
+Starting Program: 2014-Sep-17 18:59:15.406448
 Creating Domain...
   X Cells: 91
   Y Cells: 91
@@ -17546,6 +17546,6 @@ Beginning Simulation...
   2100-Dec-31 22:00:00 (100%)
   2100-Dec-31 23:00:00 (100%)
   2100-Dec-31 23:00:00 (100%)
-Finished Program: 2014-Sep-13 20:43:56.793780
-Elapsed Time: 05:26:44.392582
+Finished Program: 2014-Sep-18 00:32:05.499189
+Elapsed Time: 05:32:50.092741
 
