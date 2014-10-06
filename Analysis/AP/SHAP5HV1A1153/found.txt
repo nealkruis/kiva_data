@@ -1,0 +1,8 @@
+# Set values below
+
+:foundation_shape=>'H',
+:foundation_area=>1153|'ft2',
+:length=>42.122|'ft',
+:width=>42.122|'ft',
+:a_dim=>15.531|'ft',
+:b_dim=>20|'ft'
