@@ -1,0 +1,5 @@
+# Set values below
+
+:foundation_shape=>'-',
+:foundation_area=>32400|'ft2',
+:foundation_aspect_ratio=>1
