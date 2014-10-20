@@ -1,0 +1,12 @@
+# Set values below
+
+:foundation_shape=>'-',
+:foundation_area=>3600.0|'ft2',
+:foundation_aspect_ratio=>1,
+:coordinate_system=>'2DAXIAL',
+
+:foundation_type=>'CRAWLSPACE',
+:interior_vertical_depth=>4|'ft',
+:interior_horizontal_width=>4|'ft',
+
+:insulation_level=>5.0|'R-IP'

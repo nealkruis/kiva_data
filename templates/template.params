@@ -97,7 +97,7 @@ else
 end
 
 wall_thickness = 1|'ft'
-footer_depth = 1|'ft'
+footer_depth = 20|'in'
 
 xps_k = 1/((5|'R-IP')/(1|'in'))
 insulation_thickness = insulation_level*xps_k
@@ -287,6 +287,7 @@ end
 
   mesh:
     minCellDim: <%= min_cell_dim %>  # [m]
+    maxNearGrowthCoeff: <%= max_cell_growth %>
     maxDepthGrowthCoeff: <%= max_cell_growth %>
     maxInteriorGrowthCoeff: <%= max_cell_growth %>
     maxExteriorGrowthCoeff: <%= max_cell_growth %>

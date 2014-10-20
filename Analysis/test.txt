@@ -5,10 +5,10 @@
 :timestep=>60,
 
 :plot=>false,
-:outputs=>[17,15,14,11,10,9],
+:outputs=>[17,15,14,11,10,8],
 
 :min_cell_dim=>0.006,
-:max_cell_growth=>1.40,
+:max_cell_growth=>1.20,
 :linear_solver_tolerance=>1e-6,
 
 :init_method=>"STEADY-STATE",
