@@ -6,6 +6,7 @@
 :coordinate_system=>'2DLINEAR',
 
 :foundation_type=>'SLAB',
+:interior_vertical_depth=>8|'in',
 :whole_slab=>true,
 
 :insulation_level=>20.0|'R-IP'

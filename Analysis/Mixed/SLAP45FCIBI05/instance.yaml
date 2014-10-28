@@ -61,10 +61,10 @@
       surfaceRoughness: 30
       slab:
         layers:
+      
           -
             material: Concrete
             thickness: 0.2032
-      
         emissivity: 0.8
       wall:
         layers:
@@ -77,11 +77,11 @@
         exteriorEmissivity: 0.8
         exteriorAbsorptivity: 0.8
       interiorVerticalInsulation:
-        depth: 1.2192
+        depth: 1.4224
         material: XPS
         thickness: 0.0254
       interiorHorizontalInsulation:
-        depth: 1.2192
+        depth: 1.4224
         width: 1.2192
         material: XPS
         thickness: 0.0254

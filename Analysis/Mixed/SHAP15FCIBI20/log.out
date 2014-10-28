@@ -3,12 +3,12 @@ kiva v0.2.0-9-g526928a
 Copyright (C) 2012-2014 Big Ladder Software
 Web: www.bigladdersoftware.com
 
-Starting Program: 2014-Oct-15 00:17:17.062223
+Starting Program: 2014-Oct-24 20:35:20.209925
 Creating Domain...
   X Cells: 260
   Y Cells: 269
-  Z Cells: 129
-  Total Cells: 9022260
+  Z Cells: 132
+  Total Cells: 9232080
 Initializing Temperatures...
   2098-Oct-01 23:00:00
   2098-Oct-08 23:00:00
@@ -17546,5 +17546,5 @@ Beginning Simulation...
   2100-Dec-31 22:00:00 (100%)
   2100-Dec-31 23:00:00 (100%)
   2100-Dec-31 23:00:00 (100%)
-Finished Program: 2014-Oct-16 15:17:12.624003
-Elapsed Time: 38:59:55.561780
+Finished Program: 2014-Oct-26 14:18:52.577800
+Elapsed Time: 41:43:32.367875

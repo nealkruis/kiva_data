@@ -39,6 +39,7 @@ parameter "slab_thickness", :default=>8|'in'
 parameter "perimeter_width", :default=>0|'ft'
 
 parameter "soil_type", :default=>"Typical Soil"
+parameter "absorptivity", :default=>0.8
 
 parameter "deep_ground_depth", :default=>40
 parameter "far_field_width", :default=>40
@@ -103,7 +104,6 @@ xps_k = 1/((5|'R-IP')/(1|'in'))
 insulation_thickness = insulation_level*xps_k
 
 concrete_material = "Concrete"
-absorptivity = 0.8
 
 height_above_grade = slab_thickness
 
@@ -183,14 +183,14 @@ Foundation:
 <% if !(bestest) %>
   slab:
     layers:
-      -
-        material: <%= concrete_material %>
-        thickness: <%= slab_thickness %>
   <% if (whole_slab) %>
       -
         material: XPS
         thickness: <%= insulation_thickness%>
   <% end %>
+      -
+        material: <%= concrete_material %>
+        thickness: <%= slab_thickness %>
     emissivity: <%= absorptivity %>
 <% end %>
   wall:

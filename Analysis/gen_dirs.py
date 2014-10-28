@@ -10,8 +10,8 @@ with open('founds.csv','rU') as f:
     for row in reader:
       for loc in locations:
           dir_name = os.path.join(loc,'S'+row[0]+'AP'+row[1]+'F'+row[2]+'I'+row[3])
-          print "Generating: " + dir_name
           if not os.path.exists(dir_name):
+              print "Generating: " + dir_name
               os.makedirs(dir_name)
               os.symlink('../../bin/run.sh',dir_name+'/run.sh')
               os.symlink('../../bin/jrun.sh',dir_name+'/jrun.sh')
@@ -65,7 +65,7 @@ with open('founds.csv','rU') as f:
                     elif row[2][1:] == 'IV':
                       fnd.write(":interior_vertical_depth=>4|'ft',\n")
                     elif row[2][1:] == 'IB':
-                      fnd.write(":interior_vertical_depth=>4|'ft',\n")
+                      fnd.write(":interior_vertical_depth=>(4|'ft') + (8|'in'),\n")
                       fnd.write(":interior_horizontal_width=>4|'ft',\n")
                   elif row[2][0] == 'S':
                     fnd.write(":foundation_type=>'SLAB',\n")
@@ -80,6 +80,7 @@ with open('founds.csv','rU') as f:
                       fnd.write(":exterior_vertical_depth=>8|'in',\n")
                       fnd.write(":exterior_horizontal_width=>4|'ft',\n")
                     elif row[2][1:] == 'IW':
+                      fnd.write(":interior_vertical_depth=>8|'in',\n")
                       fnd.write(":whole_slab=>true,\n")
 
                   fnd.write("\n:insulation_level=>" + str(float(row[3])) + "|'R-IP'")

@@ -1,20 +1,28 @@
 #!/bin/bash
 
-if [ $# -ne 1 ]
+if [ $# -lt 1 ]
 then
-  echo "Invalid arguments: enter only the walltime length in hours"
+  echo "Invalid arguments: enter at least the walltime length in hours."
+  echo "Other arguments are [queue name] and [number of cpus]."
   exit 1
 fi
 
-queue='serial'
-
-cpus=24
+if [ $# -gt 1 ]
+then
+  queue=$2
+  cpus=$3
+else
+  queue='serial'
+  cpus=24
+fi
 
 temp=$(dirname $(dirname $PWD))
 test=${temp##*/}
 temp=$(dirname $PWD)
 case=${temp##*/}
 soln=${PWD##*/}
+
+sleep 1
 
 sbatch --qos $queue --workdir=$PWD --nodes=1 --ntasks-per-node=$cpus --time=$1:00:00 \
 --export=GOMP_CPU_AFFINITY="0-$(( cpus - 1 ))" \

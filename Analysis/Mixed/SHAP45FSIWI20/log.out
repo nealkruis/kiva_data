@@ -3,16 +3,13 @@ kiva v0.2.0-9-g526928a
 Copyright (C) 2012-2014 Big Ladder Software
 Web: www.bigladdersoftware.com
 
-Starting Program: 2014-Oct-11 15:54:14.898139
+Starting Program: 2014-Oct-23 23:21:26.448792
 Creating Domain...
-  X Cells: 189
-  Y Cells: 192
-  Z Cells: 107
-  Total Cells: 3882816
+  X Cells: 209
+  Y Cells: 212
+  Z Cells: 103
+  Total Cells: 4563724
 Initializing Temperatures...
-Warning: Solution did not converge after 1280 iterations.
-  The final residual was: 0.000127104
-  Solver status: 2
   2098-Oct-01 23:00:00
   2098-Oct-08 23:00:00
   2098-Oct-15 23:00:00
@@ -17549,5 +17546,5 @@ Beginning Simulation...
   2100-Dec-31 22:00:00 (100%)
   2100-Dec-31 23:00:00 (100%)
   2100-Dec-31 23:00:00 (100%)
-Finished Program: 2014-Oct-12 04:31:55.991273
-Elapsed Time: 12:37:41.093134
+Finished Program: 2014-Oct-24 20:34:42.097413
+Elapsed Time: 21:13:15.648621
