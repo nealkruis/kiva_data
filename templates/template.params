@@ -64,7 +64,11 @@ parameter "imp_periods", :default=>0
 parameter "imp_timestep", :default=>0
 parameter "warmup_days", :default=>0
 
-parameter "coordinate_system", :default=>"3DSYMMETRY"
+parameter "coordinate_system", :default=>"" # Obsolete
+parameter "coord_system", :default=>"CARTESIAN"
+parameter "number_of_dimensions", :default=>3
+parameter "use_symmetry", :default=>"yes"
+parameter "reduction_strategy", :default=>"AP"
 
 parameter "all_outputs", :default=>false
 parameter "outputs", :default=>[17]
@@ -73,6 +77,7 @@ parameter "plot", :default=>true
 parameter "plot_freq", :default=>36
 parameter "plot_size", :default=>800
 parameter "plot_grid", :default=>"yes"
+parameter "plot_contours", :default=>"no"
 
 parameter "bestest", :default=>false
 parameter "bestest_soil_k", :default=> 1.9
@@ -120,6 +125,24 @@ end
 
 if (all_outputs)
   outputs = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
+end
+
+if (coordinate_system == "2DAXIAL")
+  number_of_dimensions = 2
+  coord_system = "CYLINDRICAL"
+  reduction_strategy = "AP"
+elsif (coordinate_system == "2DLINEAR")
+  number_of_dimensions = 2
+  coord_system = "CARTESIAN"
+  reduction_strategy = "AP"
+elsif (coordinate_system == "3DSYMMETRIC")
+  number_of_dimensions = 3
+  coord_system = "CARTESIAN"
+  use_symmetry = "yes"
+elsif (coordinate_system == "3D")
+  number_of_dimensions = 3
+  coord_system = "CARTESIAN"
+  use_symmetry = "no"
 end
 
 %>
@@ -242,7 +265,10 @@ Foundation:
 
   indoorAirTemperature: <%= interior_temp + 273.15 %>  # [K]
 
-  coordinateSystem: <%= coordinate_system %>  # 2DAXIAL | 2DLINEAR | 3D | 3DSYMMETRY
+  coordinateSystem: <%= coord_system %>  # CARTESIAN | CYLINDRICAL
+  numberOfDimensions: <%= number_of_dimensions %> # 2 or 3
+  reductionStrategy: <%= reduction_strategy %> # AP | NEG
+  useSymmetry: <%= use_symmetry %>
 <%
 
 vertices = []
@@ -344,7 +370,7 @@ end
       frequency: <%= plot_freq %>  # [h]
       grid: <%= plot_grid %>
       gradients: no
-      contours: no
+      contours: <%= plot_contours %>
       size: <%= plot_size %>
       zRange: [0,0]
     -
@@ -352,7 +378,7 @@ end
       frequency: <%= plot_freq %>  # [h]
       grid: <%= plot_grid %>
       gradients: no
-      contours: no
+      contours: <%= plot_contours %>
       size: <%= plot_size %>
       xRange: [0,0]
   <% end %>
@@ -361,7 +387,7 @@ end
       frequency: <%= plot_freq %>  # [h]
       grid: <%= plot_grid %>
       gradients: no
-      contours: no
+      contours: <%= plot_contours %>
       size: <%= plot_size %>
       yRange: [0,0]
 <% end %>
