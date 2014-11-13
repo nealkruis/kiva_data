@@ -78,6 +78,7 @@ parameter "plot_freq", :default=>36
 parameter "plot_size", :default=>800
 parameter "plot_grid", :default=>"yes"
 parameter "plot_contours", :default=>"no"
+parameter "plot_color_scheme", :default=>"CMR"
 
 parameter "bestest", :default=>false
 parameter "bestest_soil_k", :default=> 1.9
@@ -372,6 +373,7 @@ end
       gradients: no
       contours: <%= plot_contours %>
       size: <%= plot_size %>
+      colorScheme: <%= plot_color_scheme %>
       zRange: [0,0]
     -
       name: "X-Slice"
@@ -380,6 +382,7 @@ end
       gradients: no
       contours: <%= plot_contours %>
       size: <%= plot_size %>
+      colorScheme: <%= plot_color_scheme %>
       xRange: [0,0]
   <% end %>
     -
@@ -389,5 +392,6 @@ end
       gradients: no
       contours: <%= plot_contours %>
       size: <%= plot_size %>
+      colorScheme: <%= plot_color_scheme %>
       yRange: [0,0]
 <% end %>
