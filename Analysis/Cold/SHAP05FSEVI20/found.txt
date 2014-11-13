@@ -1,0 +1,14 @@
+# Set values below
+
+:foundation_shape=>'H',
+:foundation_area=>12504|'ft2',
+:length=>420.163|'ft',
+:width=>420.163|'ft',
+:a_dim=>205.041|'ft',
+:b_dim=>400|'ft',
+:coordinate_system=>'3DSYMMETRY',
+
+:foundation_type=>'SLAB',
+:exterior_vertical_depth=>4|'ft',
+
+:insulation_level=>20.0|'R-IP'

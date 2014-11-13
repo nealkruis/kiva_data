@@ -1,0 +1,11 @@
+# Set values below
+
+:foundation_shape=>'-',
+:foundation_area=>32400.0|'ft2',
+:foundation_aspect_ratio=>1,
+:coordinate_system=>'2DAXIAL',
+
+:foundation_type=>'SLAB',
+:interior_vertical_depth=>4|'ft',
+
+:insulation_level=>20.0|'R-IP'
