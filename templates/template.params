@@ -78,7 +78,11 @@ parameter "plot_freq", :default=>36
 parameter "plot_size", :default=>800
 parameter "plot_grid", :default=>"yes"
 parameter "plot_contours", :default=>"no"
+parameter "plot_number_of_contours", :default=>13
 parameter "plot_color_scheme", :default=>"CMR"
+parameter "plot_units", :default=>"SI"
+parameter "plot_min_temp", :default=>-20
+parameter "plot_max_temp", :default=>40
 
 parameter "bestest", :default=>false
 parameter "bestest_soil_k", :default=> 1.9
@@ -372,8 +376,11 @@ end
       grid: <%= plot_grid %>
       gradients: no
       contours: <%= plot_contours %>
+      numberOfContours: <%= plot_number_of_contours %>
       size: <%= plot_size %>
       colorScheme: <%= plot_color_scheme %>
+      outputUnits: <%= plot_units %>
+      temperatureRange: [<%= plot_min_temp %>, <%= plot_max_temp %>]
       zRange: [0,0]
     -
       name: "X-Slice"
@@ -381,8 +388,11 @@ end
       grid: <%= plot_grid %>
       gradients: no
       contours: <%= plot_contours %>
+      numberOfContours: <%= plot_number_of_contours %>
       size: <%= plot_size %>
       colorScheme: <%= plot_color_scheme %>
+      outputUnits: <%= plot_units %>
+      temperatureRange: [<%= plot_min_temp %>, <%= plot_max_temp %>]
       xRange: [0,0]
   <% end %>
     -
@@ -391,7 +401,10 @@ end
       grid: <%= plot_grid %>
       gradients: no
       contours: <%= plot_contours %>
+      numberOfContours: <%= plot_number_of_contours %>
       size: <%= plot_size %>
       colorScheme: <%= plot_color_scheme %>
+      outputUnits: <%= plot_units %>
+      temperatureRange: [<%= plot_min_temp %>, <%= plot_max_temp %>]
       yRange: [0,0]
 <% end %>
