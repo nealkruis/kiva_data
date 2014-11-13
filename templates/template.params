@@ -318,7 +318,11 @@ end
 
   mesh:
     minCellDim: <%= min_cell_dim %>  # [m]
+<% if (bestest) %>
+    maxNearGrowthCoeff: 1.0
+<% else %>
     maxNearGrowthCoeff: <%= max_cell_growth %>
+<% end %>
     maxDepthGrowthCoeff: <%= max_cell_growth %>
     maxInteriorGrowthCoeff: <%= max_cell_growth %>
     maxExteriorGrowthCoeff: <%= max_cell_growth %>
