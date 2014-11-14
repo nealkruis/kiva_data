@@ -78,7 +78,10 @@
     
       indoorAirTemperature: 303.15  # [K]
     
-      coordinateSystem: 3DSYMMETRY  # 2DAXIAL | 2DLINEAR | 3D | 3DSYMMETRY
+      coordinateSystem: CARTESIAN  # CARTESIAN | CYLINDRICAL
+      numberOfDimensions: 3 # 2 or 3
+      reductionStrategy: AP # AP | NEG
+      useSymmetry: yes
     
       polygon:
         - [-6.0, -6.0]
@@ -89,6 +92,7 @@
     
       mesh:
         minCellDim: 0.006  # [m]
+        maxNearGrowthCoeff: 1.0
         maxDepthGrowthCoeff: 1.2
         maxInteriorGrowthCoeff: 1.2
         maxExteriorGrowthCoeff: 1.2
@@ -110,7 +114,7 @@
       outputReport:
         minFrequency: 60  # [min]
         reports:
-          - 13
+          - 17
     
       outputAnimations:
 #END TEMPLATE '/projects/kruis/kiva_data/templates/template.params'
