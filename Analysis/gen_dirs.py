@@ -49,6 +49,27 @@ with open('founds.csv','rU') as f:
                     fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
                     fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
                     fnd.write(":coordinate_system=>'3DSYMMETRY',\n\n")
+                  elif row[0] == '1':
+                    fnd.write(":foundation_shape=>'H',\n")
+                    fnd.write(":foundation_area=>"+row[4]+"|'ft2',\n")
+                    fnd.write(":length=>"+row[5]+"|'ft',\n")
+                    fnd.write(":width=>"+row[6]+"|'ft',\n")
+                    fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
+                    fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
+                    fnd.write(":coord_system=>'CYLINDRICAL',\n")
+                    fnd.write(":number_of_dimensions=>2,\n")
+                    fnd.write(":reduction_strategy=>'NEG',\n\n")
+                  elif row[0] == '2':
+                    fnd.write(":foundation_shape=>'H',\n")
+                    fnd.write(":foundation_area=>"+row[4]+"|'ft2',\n")
+                    fnd.write(":length=>"+row[5]+"|'ft',\n")
+                    fnd.write(":width=>"+row[6]+"|'ft',\n")
+                    fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
+                    fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
+                    fnd.write(":coord_system=>'CARTESIAN',\n")
+                    fnd.write(":number_of_dimensions=>2,\n")
+                    fnd.write(":reduction_strategy=>'NEG',\n\n")
+
 
                   if row[2][0] == 'B':
                     fnd.write(":foundation_type=>'BASEMENT',\n")
