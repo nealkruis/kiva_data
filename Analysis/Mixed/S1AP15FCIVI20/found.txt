@@ -1,0 +1,16 @@
+# Set values below
+
+:foundation_shape=>'H',
+:foundation_area=>6332|'ft2',
+:length=>82.426|'ft',
+:width=>82.426|'ft',
+:a_dim=>23.107|'ft',
+:b_dim=>10|'ft',
+:coord_system=>'CYLINDRICAL',
+:number_of_dimensions=>2,
+:reduction_strategy=>'NEG',
+
+:foundation_type=>'CRAWLSPACE',
+:interior_vertical_depth=>4|'ft',
+
+:insulation_level=>20.0|'R-IP'

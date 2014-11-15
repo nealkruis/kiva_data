@@ -1,0 +1,15 @@
+# Set values below
+
+:foundation_shape=>'H',
+:foundation_area=>875.7|'ft2',
+:length=>33.028|'ft',
+:width=>33.028|'ft',
+:a_dim=>10.757|'ft',
+:b_dim=>10|'ft',
+:coord_system=>'CARTESIAN',
+:number_of_dimensions=>2,
+:reduction_strategy=>'NEG',
+
+:foundation_type=>'SLAB',
+
+:insulation_level=>0.0|'R-IP'
