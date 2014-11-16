@@ -276,7 +276,7 @@ Foundation:
 
   coordinateSystem: <%= coord_system %>  # CARTESIAN | CYLINDRICAL
   numberOfDimensions: <%= number_of_dimensions %> # 2 or 3
-  reductionStrategy: <%= reduction_strategy %> # AP | NEG
+  reductionStrategy: <%= reduction_strategy %> # AP | NEG | PNEG | A-P | RR
   useSymmetry: <%= use_symmetry %>
 <%
 
