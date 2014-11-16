@@ -67,7 +67,7 @@ parameter "warmup_days", :default=>0
 parameter "coordinate_system", :default=>"" # Obsolete
 parameter "coord_system", :default=>"CARTESIAN"
 parameter "number_of_dimensions", :default=>3
-parameter "use_symmetry", :default=>"yes"
+parameter "use_symmetry", :default=>true
 parameter "reduction_strategy", :default=>"AP"
 
 parameter "all_outputs", :default=>false
@@ -76,13 +76,17 @@ parameter "outputs", :default=>[17]
 parameter "plot", :default=>true
 parameter "plot_freq", :default=>36
 parameter "plot_size", :default=>800
-parameter "plot_grid", :default=>"yes"
-parameter "plot_contours", :default=>"no"
+parameter "plot_grid", :default=>true
+parameter "plot_axes", :default=>true
+parameter "plot_contours", :default=>false
+parameter "plot_contour_labels", :default=>false
 parameter "plot_number_of_contours", :default=>13
 parameter "plot_color_scheme", :default=>"CMR"
 parameter "plot_units", :default=>"SI"
 parameter "plot_min_temp", :default=>-20
 parameter "plot_max_temp", :default=>40
+parameter "plot_format", :default=>"PNG"
+parameter "plot_timestamp", :default=>true
 
 parameter "bestest", :default=>false
 parameter "bestest_soil_k", :default=> 1.9
@@ -376,10 +380,14 @@ end
   <% if (coordinate_system == "3D" || coordinate_system == "3DSYMMETRY") %>
     -
       name: "Grade"
+      format: <%= plot_format %>
       frequency: <%= plot_freq %>  # [h]
       grid: <%= plot_grid %>
+      axes: <%= plot_axes %>
+      timestamp: <%= plot_timestamp %>
       gradients: no
       contours: <%= plot_contours %>
+      contourLabels: <%= plot_contour_labels %>
       numberOfContours: <%= plot_number_of_contours %>
       size: <%= plot_size %>
       colorScheme: <%= plot_color_scheme %>
@@ -388,10 +396,14 @@ end
       zRange: [0,0]
     -
       name: "X-Slice"
+      format: <%= plot_format %>
       frequency: <%= plot_freq %>  # [h]
       grid: <%= plot_grid %>
+      axes: <%= plot_axes %>
+      timestamp: <%= plot_timestamp %>
       gradients: no
       contours: <%= plot_contours %>
+      contourLabels: <%= plot_contour_labels %>
       numberOfContours: <%= plot_number_of_contours %>
       size: <%= plot_size %>
       colorScheme: <%= plot_color_scheme %>
@@ -401,10 +413,14 @@ end
   <% end %>
     -
       name: "Y-Slice"
+      format: <%= plot_format %>
       frequency: <%= plot_freq %>  # [h]
       grid: <%= plot_grid %>
+      axes: <%= plot_axes %>
+      timestamp: <%= plot_timestamp %>
       gradients: no
       contours: <%= plot_contours %>
+      contourLabels: <%= plot_contour_labels %>
       numberOfContours: <%= plot_number_of_contours %>
       size: <%= plot_size %>
       colorScheme: <%= plot_color_scheme %>
