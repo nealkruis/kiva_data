@@ -20,6 +20,12 @@ parameter "width", :default=>37|'ft'
 parameter "a_dim", :default=>12.9|'ft'
 parameter "b_dim", :default=>14.4|'ft'
 
+# Parameters for +-shapes
+parameter "l_x", :default=>37|'ft'
+parameter "w_x", :default=>37|'ft'
+parameter "l_y", :default=>12.9|'ft'
+parameter "w_y", :default=>14.4|'ft'
+
 
 parameter "foundation_type", :default=>'SLAB'
 
@@ -87,6 +93,18 @@ parameter "plot_min_temp", :default=>-20
 parameter "plot_max_temp", :default=>40
 parameter "plot_format", :default=>"PNG"
 parameter "plot_timestamp", :default=>true
+
+parameter "z_slice", :default=>0
+parameter "z_slice_x_range", :default=>[]
+parameter "z_slice_y_range", :default=>[]
+
+parameter "x_slice", :default=>0
+parameter "x_slice_y_range", :default=>[]
+parameter "x_slice_z_range", :default=>[]
+
+parameter "y_slice", :default=>0
+parameter "y_slice_x_range", :default=>[]
+parameter "y_slice_z_range", :default=>[]
 
 parameter "bestest", :default=>false
 parameter "bestest_soil_k", :default=> 1.9
@@ -307,7 +325,24 @@ elsif (foundation_shape == 'H')
     v[0] -= width/2.0
     v[1] -= length/2.0
   end
+elsif (foundation_shape == '+')
+  vertices << [0,0]
+  vertices << [0,l_y]
+  vertices << [-l_x,l_y]
+  vertices << [-l_x,l_y+w_y]
+  vertices << [0,l_y+w_y]
+  vertices << [0,2*l_y+w_y]
+  vertices << [w_x,2*l_y+w_y]
+  vertices << [w_x,l_y+w_y]
+  vertices << [w_x+l_x,l_y+w_y]
+  vertices << [w_x+l_x,l_y]
+  vertices << [w_x,l_y]
+  vertices << [w_x,0]
 
+  for v in vertices
+    v[0] -= w_x*0.5
+    v[1] -= (2.0*l_y + w_y)*0.5
+  end
 end
 
 %>
@@ -377,9 +412,9 @@ end
 
   outputAnimations:
 <% if (plot) %>
-  <% if (coordinate_system == "3D" || coordinate_system == "3DSYMMETRY") %>
+  <% if (number_of_dimensions == 3) %>
     -
-      name: "Grade"
+      name: "Z-slice"
       format: <%= plot_format %>
       frequency: <%= plot_freq %>  # [h]
       grid: <%= plot_grid %>
@@ -393,7 +428,13 @@ end
       colorScheme: <%= plot_color_scheme %>
       outputUnits: <%= plot_units %>
       temperatureRange: [<%= plot_min_temp %>, <%= plot_max_temp %>]
-      zRange: [0,0]
+      zRange: [<%= z_slice %>,<%= z_slice %>]
+    <% if (z_slice_x_range.length == 2) %>
+      xRange: [<%= z_slice_x_range[0] %>, <%= z_slice_x_range[1] %>]
+    <% end %>
+    <% if (z_slice_y_range.length == 2) %>
+      yRange: [<%= z_slice_y_range[0] %>, <%= z_slice_y_range[1] %>]
+    <% end %>
     -
       name: "X-Slice"
       format: <%= plot_format %>
@@ -409,7 +450,13 @@ end
       colorScheme: <%= plot_color_scheme %>
       outputUnits: <%= plot_units %>
       temperatureRange: [<%= plot_min_temp %>, <%= plot_max_temp %>]
-      xRange: [0,0]
+      xRange: [<%= x_slice %>,<%= x_slice %>]
+    <% if (x_slice_y_range.length == 2) %>
+      yRange: [<%= x_slice_y_range[0] %>, <%= x_slice_y_range[1] %>]
+    <% end %>
+    <% if (x_slice_z_range.length == 2) %>
+      zRange: [<%= x_slice_z_range[0] %>, <%= x_slice_z_range[1] %>]
+    <% end %>
   <% end %>
     -
       name: "Y-Slice"
@@ -426,5 +473,11 @@ end
       colorScheme: <%= plot_color_scheme %>
       outputUnits: <%= plot_units %>
       temperatureRange: [<%= plot_min_temp %>, <%= plot_max_temp %>]
-      yRange: [0,0]
+      yRange: [<%= y_slice %>,<%= y_slice %>]
+ <% if (y_slice_x_range.length == 2) %>
+      xRange: [<%= y_slice_x_range[0] %>, <%= y_slice_x_range[1] %>]
+ <% end %>
+ <% if (x_slice_z_range.length == 2) %>
+      zRange: [<%= y_slice_z_range[0] %>, <%= y_slice_z_range[1] %>]
+ <% end %>
 <% end %>
