@@ -9,7 +9,10 @@ with open('founds.csv','rU') as f:
     reader.next()
     for row in reader:
       for loc in locations:
-          dir_name = os.path.join(loc,'S'+row[0]+'AP'+row[1]+'F'+row[2]+'I'+row[3])
+          if row[9] == '':
+            dir_name = os.path.join(loc,'S'+row[0]+'AP'+row[1]+'F'+row[2]+'I'+row[3])
+          else:
+            dir_name = os.path.join(loc,'S'+row[0]+'AP'+row[1]+'F'+row[2]+'I'+row[3]+'R'+row[9])
           if not os.path.exists(dir_name):
               print "Generating: " + dir_name
               os.makedirs(dir_name)
@@ -22,53 +25,66 @@ with open('founds.csv','rU') as f:
                     fnd.write(":foundation_shape=>'-',\n")
                     fnd.write(":foundation_area=>"+str(square_area)+"|'ft2',\n")
                     fnd.write(":foundation_aspect_ratio=>1,\n")
-                    fnd.write(":coordinate_system=>'2DAXIAL',\n\n")
+                    fnd.write(":coord_system=>'CYLINDRICAL',\n")
+                    fnd.write(":number_of_dimensions=>2,\n")
+                    fnd.write(":reduction_strategy=>'AP',\n\n")
                   elif row[0] == 'L':
                     fnd.write(":foundation_shape=>'-',\n")
                     fnd.write(":foundation_area=>"+str(square_area)+"|'ft2',\n")
                     fnd.write(":foundation_aspect_ratio=>1,\n")
-                    fnd.write(":coordinate_system=>'2DLINEAR',\n\n")
-                  elif row[0] == 'S':
-                    fnd.write(":foundation_shape=>'-',\n")
-                    fnd.write(":foundation_area=>"+str(square_area)+"|'ft2',\n")
-                    fnd.write(":foundation_aspect_ratio=>1,\n")
-                    fnd.write(":coordinate_system=>'3DSYMMETRY',\n\n")
-                  elif row[0] == '#':
-                    fnd.write(":foundation_shape=>'H',\n")
-                    fnd.write(":foundation_area=>"+row[4]+"|'ft2',\n")
-                    fnd.write(":length=>"+row[5]+"|'ft',\n")
-                    fnd.write(":width=>"+row[6]+"|'ft',\n")
-                    fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
-                    fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
-                    fnd.write(":coordinate_system=>'3DSYMMETRY',\n\n")
-                  elif row[0] == 'H':
-                    fnd.write(":foundation_shape=>'H',\n")
-                    fnd.write(":foundation_area=>"+row[4]+"|'ft2',\n")
-                    fnd.write(":length=>"+row[5]+"|'ft',\n")
-                    fnd.write(":width=>"+row[6]+"|'ft',\n")
-                    fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
-                    fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
-                    fnd.write(":coordinate_system=>'3DSYMMETRY',\n\n")
-                  elif row[0] == '1' or row[0] == '3':
-                    fnd.write(":foundation_shape=>'H',\n")
-                    fnd.write(":foundation_area=>"+row[4]+"|'ft2',\n")
-                    fnd.write(":length=>"+row[5]+"|'ft',\n")
-                    fnd.write(":width=>"+row[6]+"|'ft',\n")
-                    fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
-                    fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
-                    fnd.write(":coord_system=>'CYLINDRICAL',\n")
-                    fnd.write(":number_of_dimensions=>2,\n")
-                    fnd.write(":reduction_strategy=>'NEG',\n\n")
-                  elif row[0] == '2' or row[0] == '4':
-                    fnd.write(":foundation_shape=>'H',\n")
-                    fnd.write(":foundation_area=>"+row[4]+"|'ft2',\n")
-                    fnd.write(":length=>"+row[5]+"|'ft',\n")
-                    fnd.write(":width=>"+row[6]+"|'ft',\n")
-                    fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
-                    fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
                     fnd.write(":coord_system=>'CARTESIAN',\n")
                     fnd.write(":number_of_dimensions=>2,\n")
-                    fnd.write(":reduction_strategy=>'NEG',\n\n")
+                    fnd.write(":reduction_strategy=>'AP',\n\n")
+                  else:
+
+                    if row[0] == 'S':
+                      fnd.write(":foundation_shape=>'-',\n")
+                      fnd.write(":foundation_area=>"+str(square_area)+"|'ft2',\n")
+                      fnd.write(":foundation_aspect_ratio=>1,\n")
+                    elif row[0] == '#':
+                      fnd.write(":foundation_shape=>'H',\n")
+                      fnd.write(":foundation_area=>"+row[4]+"|'ft2',\n")
+                      fnd.write(":length=>"+row[5]+"|'ft',\n")
+                      fnd.write(":width=>"+row[6]+"|'ft',\n")
+                      fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
+                      fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
+                      if row[9]
+                    elif row[0] == 'H':
+                      fnd.write(":foundation_shape=>'H',\n")
+                      fnd.write(":foundation_area=>"+row[4]+"|'ft2',\n")
+                      fnd.write(":length=>"+row[5]+"|'ft',\n")
+                      fnd.write(":width=>"+row[6]+"|'ft',\n")
+                      fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
+                      fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
+
+                    if row[9] == 'NC':
+                      fnd.write(":coord_system=>'CYLINDRICAL',\n")
+                      fnd.write(":number_of_dimensions=>2,\n")
+                      fnd.write(":reduction_strategy=>'NEG',\n\n")
+                    elif row[9] == 'NL':
+                      fnd.write(":coord_system=>'CARTESIAN',\n")
+                      fnd.write(":number_of_dimensions=>2,\n")
+                      fnd.write(":reduction_strategy=>'NEG',\n\n")
+                    elif row[9] == 'PC':
+                      fnd.write(":coord_system=>'CYLINDRICAL',\n")
+                      fnd.write(":number_of_dimensions=>2,\n")
+                      fnd.write(":reduction_strategy=>'PNEG',\n\n")
+                    elif row[9] == 'BC':
+                      fnd.write(":coord_system=>'CYLINDRICAL',\n")
+                      fnd.write(":number_of_dimensions=>2,\n")
+                      fnd.write(":reduction_strategy=>'A-P',\n\n")
+                    elif row[9] == 'RC':
+                      fnd.write(":coord_system=>'CYLINDRICAL',\n")
+                      fnd.write(":number_of_dimensions=>2,\n")
+                      fnd.write(":reduction_strategy=>'RR',\n\n")
+                    elif row[9] == 'RL':
+                      fnd.write(":coord_system=>'CARTESIAN',\n")
+                      fnd.write(":number_of_dimensions=>2,\n")
+                      fnd.write(":reduction_strategy=>'RR',\n\n")
+                    else:
+                      fnd.write(":coord_system=>'CARTESIAN',\n")
+                      fnd.write(":number_of_dimensions=>3,\n")
+                      fnd.write(":use_symmetry=>true,\n\n")
 
 
                   if row[2][0] == 'B':
