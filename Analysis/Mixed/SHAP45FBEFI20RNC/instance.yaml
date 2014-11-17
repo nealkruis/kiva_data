@@ -1,5 +1,5 @@
-#INSERT TEMPLATE '/projects/kruis/kiva_data/templates/template.params'
-#Path resolves to '/projects/kruis/kiva_data/templates/template.params'
+#INSERT TEMPLATE '/Users/nkruis/git/kiva_data/templates/template.params'
+#Path resolves to '/Users/nkruis/git/kiva_data/templates/template.params'
     
     
     Simulation Control:
@@ -90,8 +90,8 @@
     
       coordinateSystem: CYLINDRICAL  # CARTESIAN | CYLINDRICAL
       numberOfDimensions: 2 # 2 or 3
-      reductionStrategy: NEG # AP | NEG
-      useSymmetry: yes
+      reductionStrategy: NEG # AP | NEG | PNEG | A-P | RR
+      useSymmetry: true
     
       polygon:
         - [-90.047064, -90.047064]
@@ -141,4 +141,4 @@
           - 8
     
       outputAnimations:
-#END TEMPLATE '/projects/kruis/kiva_data/templates/template.params'
+#END TEMPLATE '/Users/nkruis/git/kiva_data/templates/template.params'
