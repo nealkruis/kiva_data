@@ -477,7 +477,7 @@ end
  <% if (y_slice_x_range.length == 2) %>
       xRange: [<%= y_slice_x_range[0] %>, <%= y_slice_x_range[1] %>]
  <% end %>
- <% if (x_slice_z_range.length == 2) %>
+ <% if (y_slice_z_range.length == 2) %>
       zRange: [<%= y_slice_z_range[0] %>, <%= y_slice_z_range[1] %>]
  <% end %>
 <% end %>
