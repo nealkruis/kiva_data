@@ -1,0 +1,14 @@
+# Set values below
+
+:foundation_shape=>'-',
+:foundation_area=>32400.0|'ft2',
+:foundation_aspect_ratio=>1,
+:coord_system=>'CYLINDRICAL',
+:number_of_dimensions=>2,
+:reduction_strategy=>'NEG',
+
+:foundation_type=>'SLAB',
+:interior_vertical_depth=>8|'in',
+:whole_slab=>true,
+
+:insulation_level=>5.0|'R-IP'

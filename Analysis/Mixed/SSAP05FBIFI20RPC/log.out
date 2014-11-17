@@ -1,0 +1,271 @@
+instance.yaml
+kiva v0.2.0-19-ge248292
+Copyright (C) 2012-2014 Big Ladder Software
+Web: www.bigladdersoftware.com
+
+Starting Program: 2014-Nov-17 08:39:14.723787
+Creating Domain...
+  X Cells: 72
+  Y Cells: 1
+  Z Cells: 133
+  Total Cells: 9576
+Initializing Temperatures...
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: nan
+  Solver status: 4
+  2098-Oct-01 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Oct-08 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Oct-15 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Oct-22 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Oct-29 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Nov-05 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Nov-12 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Nov-19 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Nov-26 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-03 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-10 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-17 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-24 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-72) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-71) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-70) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-69) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-68) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-67) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-66) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-65) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-64) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-63) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-62) are less than 0
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-31 23:00:00
+  2099-Jan-12 15:00:00
+  2099-Feb-06 05:00:00
+  2099-Mar-02 19:00:00
+  2099-Mar-27 09:00:00
+  2099-Apr-20 23:00:00
+  2099-May-15 13:00:00
+  2099-Jun-09 03:00:00
+  2099-Jul-03 17:00:00
+  2099-Jul-28 06:00:00
+  2099-Aug-21 20:00:00
+  2099-Sep-15 10:00:00
+  2099-Oct-10 00:00:00
+  2099-Nov-03 14:00:00
+  2099-Nov-28 04:00:00
+  2099-Dec-22 18:00:00
+Beginning Simulation...
+  2100-Jan-15 03:00:00 (3.9%)
+  2100-Feb-06 19:00:00 (10.1%)
+  2100-Mar-01 10:00:00 (16.3%)
+  2100-Mar-24 02:00:00 (22.5%)
+  2100-Apr-15 18:00:00 (28.7%)
+  2100-May-08 10:00:00 (34.9%)
+  2100-May-31 02:00:00 (41.1%)
+  2100-Jun-22 18:00:00 (47.3%)
+  2100-Jul-15 09:00:00 (53.5%)
+  2100-Aug-07 01:00:00 (59.7%)
+  2100-Aug-29 17:00:00 (65.9%)
+  2100-Sep-21 09:00:00 (72.2%)
+  2100-Oct-14 00:00:00 (78.4%)
+  2100-Nov-05 16:00:00 (84.6%)
+  2100-Nov-28 09:00:00 (90.8%)
+  2100-Dec-21 01:00:00 (97%)
+  2100-Dec-31 23:00:00 (100%)
+Finished Program: 2014-Nov-17 08:42:57.483437
+Elapsed Time: 00:03:42.759650

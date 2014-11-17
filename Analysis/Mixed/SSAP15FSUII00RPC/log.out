@@ -1,0 +1,36 @@
+instance.yaml
+kiva v0.2.0-19-ge248292
+Copyright (C) 2012-2014 Big Ladder Software
+Web: www.bigladdersoftware.com
+
+Starting Program: 2014-Nov-17 08:44:14.023986
+Creating Domain...
+  X Cells: 61
+  Y Cells: 1
+  Z Cells: 93
+  Total Cells: 5673
+Initializing Temperatures...
+  2099-Jan-22 18:00:00
+  2099-Feb-28 01:00:00
+  2099-Apr-05 09:00:00
+  2099-May-11 17:00:00
+  2099-Jun-17 01:00:00
+  2099-Jul-23 09:00:00
+  2099-Aug-28 16:00:00
+  2099-Oct-04 00:00:00
+  2099-Nov-09 09:00:00
+  2099-Dec-15 17:00:00
+Beginning Simulation...
+  2100-Jan-20 17:00:00 (5.4%)
+  2100-Feb-25 11:00:00 (15.2%)
+  2100-Apr-02 05:00:00 (25%)
+  2100-May-08 00:00:00 (34.8%)
+  2100-Jun-12 18:00:00 (44.6%)
+  2100-Jul-18 12:00:00 (54.4%)
+  2100-Aug-23 05:00:00 (64.2%)
+  2100-Sep-28 00:00:00 (74%)
+  2100-Nov-02 18:00:00 (83.8%)
+  2100-Dec-08 13:00:00 (93.6%)
+  2100-Dec-31 23:00:00 (100%)
+Finished Program: 2014-Nov-17 08:44:34.655505
+Elapsed Time: 00:00:20.631519

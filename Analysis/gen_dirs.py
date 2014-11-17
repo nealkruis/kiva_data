@@ -48,7 +48,6 @@ with open('founds.csv','rU') as f:
                       fnd.write(":width=>"+row[6]+"|'ft',\n")
                       fnd.write(":a_dim=>"+row[7]+"|'ft',\n")
                       fnd.write(":b_dim=>"+row[8]+"|'ft',\n")
-                      if row[9]
                     elif row[0] == 'H':
                       fnd.write(":foundation_shape=>'H',\n")
                       fnd.write(":foundation_area=>"+row[4]+"|'ft2',\n")

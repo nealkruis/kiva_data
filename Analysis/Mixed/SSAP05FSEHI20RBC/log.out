@@ -1,0 +1,963 @@
+instance.yaml
+kiva v0.2.0-19-ge248292
+Copyright (C) 2012-2014 Big Ladder Software
+Web: www.bigladdersoftware.com
+
+Starting Program: 2014-Nov-17 08:40:17.322258
+Creating Domain...
+  X Cells: 208
+  Y Cells: 1
+  Z Cells: 103
+  Total Cells: 21424
+Initializing Temperatures...
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: nan
+  Solver status: 4
+  2098-Oct-01 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Oct-08 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Oct-15 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Oct-22 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Oct-29 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Nov-05 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Nov-12 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Nov-19 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Nov-26 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-03 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-10 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-17 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-24 23:00:00
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-1) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=0) or j(=-208) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=1) or j(=-207) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=2) or j(=-206) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=3) or j(=-205) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=4) or j(=-204) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=5) or j(=-203) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=6) or j(=-202) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=7) or j(=-201) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=8) or j(=-200) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=9) or j(=-199) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=10) or j(=-198) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=11) or j(=-197) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=12) or j(=-196) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=13) or j(=-195) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=14) or j(=-194) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=15) or j(=-193) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=16) or j(=-192) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=17) or j(=-191) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=18) or j(=-190) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=19) or j(=-189) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=20) or j(=-188) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=21) or j(=-187) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=22) or j(=-186) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=23) or j(=-185) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=24) or j(=-184) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=25) or j(=-183) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=26) or j(=-182) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=27) or j(=-181) are less than 0
+lis_matrix.c(685) : lis_matrix_set_value : error ILL_ARG :i(=28) or j(=-180) are less than 0
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21216) or j(=21424) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21217) or j(=21425) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21218) or j(=21426) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21219) or j(=21427) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21220) or j(=21428) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21221) or j(=21429) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21222) or j(=21430) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21223) or j(=21431) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21224) or j(=21432) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21225) or j(=21433) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21226) or j(=21434) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21227) or j(=21435) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21228) or j(=21436) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21229) or j(=21437) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21230) or j(=21438) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21231) or j(=21439) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21232) or j(=21440) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21233) or j(=21441) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21234) or j(=21442) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21235) or j(=21443) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21236) or j(=21444) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21237) or j(=21445) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21238) or j(=21446) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21239) or j(=21447) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21240) or j(=21448) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21241) or j(=21449) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21242) or j(=21450) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21243) or j(=21451) are larger than global n=(21424)
+lis_matrix.c(695) : lis_matrix_set_value : error ILL_ARG :i(=21244) or j(=21452) are larger than global n=(21424)
+Warning: Solution did not converge after 100001 iterations.
+  The final residual was: -nan
+  Solver status: 4
+  2098-Dec-31 23:00:00
+  2099-Jan-11 20:00:00
+  2099-Jan-23 01:00:00
+  2099-Feb-03 07:00:00
+  2099-Feb-14 12:00:00
+  2099-Feb-25 17:00:00
+  2099-Mar-08 23:00:00
+  2099-Mar-20 05:00:00
+  2099-Mar-31 10:00:00
+  2099-Apr-11 15:00:00
+  2099-Apr-22 21:00:00
+  2099-May-04 03:00:00
+  2099-May-15 08:00:00
+  2099-May-26 14:00:00
+  2099-Jun-06 20:00:00
+  2099-Jun-18 01:00:00
+  2099-Jun-29 07:00:00
+  2099-Jul-10 12:00:00
+  2099-Jul-21 18:00:00
+  2099-Aug-01 23:00:00
+  2099-Aug-13 05:00:00
+  2099-Aug-24 10:00:00
+  2099-Sep-04 15:00:00
+  2099-Sep-15 21:00:00
+  2099-Sep-27 02:00:00
+  2099-Oct-08 08:00:00
+  2099-Oct-19 14:00:00
+  2099-Oct-30 20:00:00
+  2099-Nov-11 01:00:00
+  2099-Nov-22 07:00:00
+  2099-Dec-03 13:00:00
+  2099-Dec-14 18:00:00
+  2099-Dec-26 00:00:00
+Beginning Simulation...
+  2100-Jan-06 05:00:00 (1.4%)
+  2100-Jan-17 08:00:00 (4.5%)
+  2100-Jan-28 12:00:00 (7.5%)
+  2100-Feb-08 15:00:00 (10.6%)
+  2100-Feb-19 19:00:00 (13.6%)
+  2100-Mar-02 22:00:00 (16.7%)
+  2100-Mar-14 02:00:00 (19.7%)
+  2100-Mar-25 06:00:00 (22.8%)
+  2100-Apr-05 09:00:00 (25.9%)
+  2100-Apr-16 13:00:00 (28.9%)
+  2100-Apr-27 16:00:00 (32%)
+  2100-May-08 20:00:00 (35%)
+  2100-May-19 23:00:00 (38.1%)
+  2100-May-31 03:00:00 (41.1%)
+  2100-Jun-11 06:00:00 (44.2%)
+  2100-Jun-22 10:00:00 (47.2%)
+  2100-Jul-03 13:00:00 (50.3%)
+  2100-Jul-14 16:00:00 (53.3%)
+  2100-Jul-25 20:00:00 (56.4%)
+  2100-Aug-05 23:00:00 (59.4%)
+  2100-Aug-17 03:00:00 (62.5%)
+  2100-Aug-28 06:00:00 (65.5%)
+  2100-Sep-08 10:00:00 (68.6%)
+  2100-Sep-19 13:00:00 (71.7%)
+  2100-Sep-30 17:00:00 (74.7%)
+  2100-Oct-11 21:00:00 (77.8%)
+  2100-Oct-23 00:00:00 (80.8%)
+  2100-Nov-03 04:00:00 (83.9%)
+  2100-Nov-14 07:00:00 (86.9%)
+  2100-Nov-25 11:00:00 (90%)
+  2100-Dec-06 15:00:00 (93%)
+  2100-Dec-17 18:00:00 (96.1%)
+  2100-Dec-28 22:00:00 (99.2%)
+  2100-Dec-31 23:00:00 (100%)
+Finished Program: 2014-Nov-17 08:46:44.274682
+Elapsed Time: 00:06:26.952424
