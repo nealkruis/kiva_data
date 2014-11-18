@@ -94,8 +94,8 @@
     
       coordinateSystem: CYLINDRICAL  # CARTESIAN | CYLINDRICAL
       numberOfDimensions: 2 # 2 or 3
-      reductionStrategy: NEG # AP | NEG
-      useSymmetry: yes
+      reductionStrategy: NEG # AP | NEG | PNEG | A-P | RR
+      useSymmetry: true
     
       polygon:
         - [-12.5617224, -12.5617224]

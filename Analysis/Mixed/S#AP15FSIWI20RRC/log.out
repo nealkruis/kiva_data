@@ -1,0 +1,54 @@
+instance.yaml
+kiva v0.2.0-21-g785bfe1
+Copyright (C) 2012-2014 Big Ladder Software
+Web: www.bigladdersoftware.com
+
+Starting Program: 2014-Nov-18 11:25:29.698240
+Creating Domain...
+  X Cells: 99
+  Y Cells: 1
+  Z Cells: 103
+  Total Cells: 10197
+Initializing Temperatures...
+Warning: Solution did not converge after 133 iterations.
+  The final residual was: 0.489794
+  Solver status: 2
+  2098-Oct-29 23:00:00
+  2099-Jan-16 13:00:00
+  2099-Feb-07 08:00:00
+  2099-Mar-01 04:00:00
+  2099-Mar-23 00:00:00
+  2099-Apr-13 19:00:00
+  2099-May-05 15:00:00
+  2099-May-27 11:00:00
+  2099-Jun-18 06:00:00
+  2099-Jul-10 02:00:00
+  2099-Jul-31 22:00:00
+  2099-Aug-22 17:00:00
+  2099-Sep-13 13:00:00
+  2099-Oct-05 08:00:00
+  2099-Oct-27 03:00:00
+  2099-Nov-17 23:00:00
+  2099-Dec-09 19:00:00
+  2099-Dec-31 14:00:00
+Beginning Simulation...
+  2100-Jan-21 22:00:00 (5.7%)
+  2100-Feb-12 06:00:00 (11.6%)
+  2100-Mar-05 13:00:00 (17.4%)
+  2100-Mar-26 21:00:00 (23.3%)
+  2100-Apr-17 04:00:00 (29.1%)
+  2100-May-08 13:00:00 (34.9%)
+  2100-May-29 21:00:00 (40.8%)
+  2100-Jun-20 05:00:00 (46.6%)
+  2100-Jul-11 13:00:00 (52.5%)
+  2100-Aug-01 20:00:00 (58.3%)
+  2100-Aug-23 04:00:00 (64.2%)
+  2100-Sep-13 12:00:00 (70%)
+  2100-Oct-04 20:00:00 (75.8%)
+  2100-Oct-26 01:00:00 (81.7%)
+  2100-Nov-16 09:00:00 (87.5%)
+  2100-Dec-07 17:00:00 (93.3%)
+  2100-Dec-29 01:00:00 (99.2%)
+  2100-Dec-31 23:00:00 (100%)
+Finished Program: 2014-Nov-18 11:26:04.138319
+Elapsed Time: 00:00:34.440079
