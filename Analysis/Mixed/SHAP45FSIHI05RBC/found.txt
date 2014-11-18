@@ -1,0 +1,17 @@
+# Set values below
+
+:foundation_shape=>'H',
+:foundation_area=>150943|'ft2',
+:length=>590.86|'ft',
+:width=>590.86|'ft',
+:a_dim=>247.715|'ft',
+:b_dim=>400|'ft',
+:coord_system=>'CYLINDRICAL',
+:number_of_dimensions=>2,
+:reduction_strategy=>'A-P',
+
+:foundation_type=>'SLAB',
+:interior_vertical_depth=>8|'in',
+:interior_horizontal_width=>4|'ft',
+
+:insulation_level=>5.0|'R-IP'

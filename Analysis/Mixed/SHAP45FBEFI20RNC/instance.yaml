@@ -1,5 +1,5 @@
-#INSERT TEMPLATE '/Users/nkruis/git/kiva_data/templates/template.params'
-#Path resolves to '/Users/nkruis/git/kiva_data/templates/template.params'
+#INSERT TEMPLATE '/projects/kruis/kiva_data/templates/template.params'
+#Path resolves to '/projects/kruis/kiva_data/templates/template.params'
     
     
     Simulation Control:
@@ -141,4 +141,4 @@
           - 8
     
       outputAnimations:
-#END TEMPLATE '/Users/nkruis/git/kiva_data/templates/template.params'
+#END TEMPLATE '/projects/kruis/kiva_data/templates/template.params'
