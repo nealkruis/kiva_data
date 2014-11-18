@@ -61,10 +61,10 @@
       surfaceRoughness: 30
       slab:
         layers:
+      
           -
             material: Concrete
             thickness: 0.2032
-      
         emissivity: 0.8
       wall:
         layers:
@@ -93,7 +93,10 @@
     
       indoorAirTemperature: 295.372222222222  # [K]
     
-      coordinateSystem: 2DAXIAL  # 2DAXIAL | 2DLINEAR | 3D | 3DSYMMETRY
+      coordinateSystem: CYLINDRICAL  # CARTESIAN | CYLINDRICAL
+      numberOfDimensions: 2 # 2 or 3
+      reductionStrategy: AP # AP | NEG | PNEG | A-P | RR
+      useSymmetry: true
     
       polygon:
         - [-27.432, -27.432]
