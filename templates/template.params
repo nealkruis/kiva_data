@@ -75,6 +75,8 @@ parameter "coord_system", :default=>"CARTESIAN"
 parameter "number_of_dimensions", :default=>3
 parameter "use_symmetry", :default=>true
 parameter "reduction_strategy", :default=>"AP"
+parameter "length1", :default=>nil
+parameter "length2", :default=>20|'ft'
 
 parameter "all_outputs", :default=>false
 parameter "outputs", :default=>[17]
@@ -294,7 +296,13 @@ Foundation:
 
   coordinateSystem: <%= coord_system %>  # CARTESIAN | CYLINDRICAL
   numberOfDimensions: <%= number_of_dimensions %> # 2 or 3
-  reductionStrategy: <%= reduction_strategy %> # AP | NEG | PNEG | A-P | RR
+  reductionStrategy: <%= reduction_strategy %> # AP | NEG | PNEG | A-P | RR | CUSTOM
+<% if reduction_strategy == 'CUSTOM' %>
+  <% if length1 != nil %>
+  length1: <%= length1 %>
+  <% end %>
+  length2: <%= length2 %>
+<% end %>
   useSymmetry: <%= use_symmetry %>
 <%
 
