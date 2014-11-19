@@ -7,6 +7,12 @@ then
   exit 1
 fi
 
+if [[ $1 != *:* ]]
+then
+  echo "Error: Time must be in the form HH:MM."
+  exit 1
+fi 
+
 if [ $# -gt 1 ]
 then
   queue=$2
@@ -24,7 +30,7 @@ soln=${PWD##*/}
 
 sleep 1
 
-sbatch --qos $queue --workdir=$PWD --nodes=1 --ntasks-per-node=$cpus --time=$1:00:00 \
+sbatch --qos $queue --workdir=$PWD --nodes=1 --ntasks-per-node=$cpus --time=$1:00 \
 --export=GOMP_CPU_AFFINITY="0-$(( cpus - 1 ))" \
 --output=log.out --error=error.out \
 --mail-type=ALL --mail-user=neal.kruis@bigladdersoftware.com \

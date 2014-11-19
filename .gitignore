@@ -6,3 +6,6 @@
 sandbox.*
 sandbox/
 error.out
+Analysis/Mixed/
+Analysis/Cold/
+Analysis/Hot/
