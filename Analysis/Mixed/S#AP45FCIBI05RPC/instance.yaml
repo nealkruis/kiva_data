@@ -95,7 +95,7 @@
     
       coordinateSystem: CYLINDRICAL  # CARTESIAN | CYLINDRICAL
       numberOfDimensions: 2 # 2 or 3
-      reductionStrategy: PNEG # AP | NEG | PNEG | A-P | RR
+      reductionStrategy: PNEG # AP | NEG | PNEG | A-P | RR | CUSTOM
       useSymmetry: true
     
       polygon:
